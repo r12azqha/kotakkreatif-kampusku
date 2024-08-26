@@ -274,7 +274,16 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "wind.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 602712333350875,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

@@ -2,6 +2,10 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "ePlayer"
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Keluar Masuk",
