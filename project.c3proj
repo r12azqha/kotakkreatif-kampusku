@@ -263,7 +263,8 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"ePlayer"
 		],
 		"subfolders": []
 	},
