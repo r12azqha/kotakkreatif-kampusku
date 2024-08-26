@@ -1,0 +1,351 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Control",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 195561174858245,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Spr_Player_Bella",
+							"sid": 421829279575690,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "up"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Spr_Player_Bella",
+							"sid": 868619268051161,
+							"parameters": {
+								"animation": "\"Player keatas gerak\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 914444461394548
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 562954928768571,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Spr_Player_Bella",
+							"sid": 420489017651316,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "down"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Spr_Player_Bella",
+							"sid": 673651809350967,
+							"parameters": {
+								"animation": "\"Player kebawah gerak\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 834132543384165
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 491736140846587,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Spr_Player_Bella",
+							"sid": 321435341397337,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Spr_Player_Bella",
+							"sid": 270840120459636,
+							"parameters": {
+								"animation": "\"Player kekiri gerak\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 697998412395649
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 132882391121358,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Spr_Player_Bella",
+							"sid": 492008627539636,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Spr_Player_Bella",
+							"sid": 433360270632378,
+							"parameters": {
+								"animation": "\"Player kekanan gerak\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 551007016474380
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 648812828777838
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 252866878657228,
+							"parameters": {
+								"audio-file": "LLS Yuuka's The-AudioConverter",
+								"loop": "looping",
+								"volume": "-5",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 810992187145357
+				}
+			],
+			"sid": 403377152384833
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Keluar Masuk",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Masuk",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Spr_PMPEnter",
+									"sid": 703874890132652,
+									"parameters": {
+										"object": "Spr_Player_Bella"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 736684934041711,
+									"parameters": {
+										"layout": "Layout 2"
+									}
+								}
+							],
+							"sid": 841385892701904
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Spr_PembayaranEnter",
+									"sid": 437476858693069,
+									"parameters": {
+										"object": "Spr_Player_Bella"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 883019132956243,
+									"parameters": {
+										"layout": "Layout 3"
+									}
+								}
+							],
+							"sid": 799334337383870
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Spr_RegistrasiEnter",
+									"sid": 163920420114255,
+									"parameters": {
+										"object": "Spr_Player_Bella"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 116983984826229,
+									"parameters": {
+										"layout": "Layout 4"
+									}
+								}
+							],
+							"sid": 637225464652942
+						}
+					],
+					"sid": 438746312538314
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Keluar",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Spr_PMPExit",
+									"sid": 626003379247881,
+									"parameters": {
+										"object": "Spr_Player_Bella"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 539423933662646,
+									"parameters": {
+										"layout": "Layout 5"
+									}
+								}
+							],
+							"sid": 698583541076854
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Spr_PembayaranExit",
+									"sid": 106222316633253,
+									"parameters": {
+										"object": "Spr_Player_Bella"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 323685560856332,
+									"parameters": {
+										"layout": "Layout 2"
+									}
+								}
+							],
+							"sid": 694089714277718
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Spr_RegistrasiExit",
+									"sid": 217669157342178,
+									"parameters": {
+										"object": "Spr_Player_Bella"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 236708259694210,
+									"parameters": {
+										"layout": "Layout 2"
+									}
+								}
+							],
+							"sid": 584019821826352
+						}
+					],
+					"sid": 702433798524505
+				}
+			],
+			"sid": 656115054298476
+		}
+	],
+	"sid": 932350374578162
+}

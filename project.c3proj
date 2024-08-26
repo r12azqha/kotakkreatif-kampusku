@@ -1,0 +1,437 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 39700,
+	"name": "Kampusku",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "sxwb5o8jqhy",
+	"objectTypes": {
+		"items": [
+			"Keyboard",
+			"Sprite11",
+			"Audio",
+			"Arrow",
+			"Sprite13",
+			"Sprite24",
+			"RumahBella"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"Sprite",
+									"Sprite21",
+									"Sprite22",
+									"Sprite20",
+									"Sprite19",
+									"Sprite18",
+									"Sprite17",
+									"Sprite28",
+									"Sprite23",
+									"Sprite26",
+									"Sprite27",
+									"Sprite3",
+									"Sprite2",
+									"Sprite8",
+									"Sprite9",
+									"Sprite6",
+									"Sprite4",
+									"Sprite12"
+								],
+								"subfolders": [],
+								"name": "Layout 1"
+							},
+							{
+								"items": [
+									"Sprite16",
+									"Sprite10",
+									"Sprite14",
+									"Sprite25",
+									"Sprite29",
+									"Sprite30",
+									"Sprite31",
+									"Sprite32",
+									"Sprite34",
+									"Sprite33",
+									"Sprite15",
+									"Sprite38"
+								],
+								"subfolders": [],
+								"name": "Layout 2"
+							},
+							{
+								"items": [
+									"Sprite45",
+									"Sprite46",
+									"Sprite47",
+									"Sprite49",
+									"Sprite37",
+									"Sprite41",
+									"Sprite39",
+									"Sprite36",
+									"Sprite5",
+									"Sprite44",
+									"Sprite35",
+									"Sprite43"
+								],
+								"subfolders": [],
+								"name": "Layout 3"
+							},
+							{
+								"items": [
+									"Sprite51",
+									"Sprite48",
+									"Sprite7",
+									"Sprite53",
+									"Sprite50"
+								],
+								"subfolders": [],
+								"name": "Layout 4"
+							}
+						],
+						"name": "InGame"
+					},
+					{
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"Spr_Player2",
+									"Spr_Player3",
+									"Sprite40",
+									"Sprite42",
+									"Sprite52"
+								],
+								"subfolders": [],
+								"name": "Contoh"
+							},
+							{
+								"items": [
+									"Spr_Player_Bella"
+								],
+								"subfolders": [],
+								"name": "Player"
+							},
+							{
+								"items": [
+									"Spr_NPC_PMBPria",
+									"Spr_NPC_PMBWanita",
+									"Spr_NPC_Kurro",
+									"Spr_NPC_Kurro2",
+									"Spr_NPC_Landung",
+									"Spr_NPC_Satpam",
+									"Spr_NPC_Bapak",
+									"Spr_NPC_Ibu"
+								],
+								"subfolders": [
+									{
+										"items": [
+											"Spr_Cat1",
+											"Spr_Cat2"
+										],
+										"subfolders": [],
+										"name": "Animal"
+									}
+								],
+								"name": "NPC"
+							}
+						],
+						"name": "Sprite Characters"
+					},
+					{
+						"items": [
+							"Spr_Collision"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"Spr_PembayaranEnter",
+									"Spr_PMPEnter",
+									"Spr_RegistrasiEnter"
+								],
+								"subfolders": [],
+								"name": "Enter System"
+							},
+							{
+								"items": [
+									"Spr_RegistrasiExit",
+									"Spr_PMPExit",
+									"Spr_PembayaranExit"
+								],
+								"subfolders": [],
+								"name": "Exit System"
+							}
+						],
+						"name": "Sistem"
+					}
+				],
+				"name": "Asset"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"Layout 1",
+					"Layout 2",
+					"Layout 3",
+					"Layout 4",
+					"Layout 5",
+					"Layout 6",
+					"Layout 7",
+					"Layout 8"
+				],
+				"subfolders": [],
+				"name": "InGame"
+			},
+			{
+				"items": [
+					"Coretan 1",
+					"Coretan 2",
+					"Coretan 3",
+					"Coreran 4"
+				],
+				"subfolders": [],
+				"name": "Crafting Table"
+			}
+		]
+	},
+	"eventSheets": {
+		"items": [
+			"Event sheet 1"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "LLS Yuuka's The-AudioConverter.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 285103852706511,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 860693688135690,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 513559695451812,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 814380384200015,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 837631350271049,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 754092807581112,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 145777180820813,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 738100854963691,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "Firdaus Rizky Pratama 2172500106",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "scale-outer",
+		"fullscreenQuality": "low",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 480,
+	"viewportHeight": 270,
+	"firstLayout": null
+}
