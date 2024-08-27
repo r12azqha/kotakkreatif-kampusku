@@ -1,0 +1,61 @@
+{
+	"name": "eRumahMC",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "ePlayer"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 631485603606503
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 163276111665121
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Spr_Player_MCBella",
+					"sid": 158294951000608,
+					"parameters": {
+						"x": "400",
+						"y": "484"
+					}
+				}
+			],
+			"sid": 831597465041507
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Spr_Player_MCBella",
+					"sid": 693756175845668,
+					"parameters": {
+						"object": "Spr_TpBL"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 658976665983540,
+					"parameters": {
+						"layout": "BL_Front"
+					}
+				}
+			],
+			"sid": 461453039010845
+		}
+	],
+	"sid": 583863183582331
+}

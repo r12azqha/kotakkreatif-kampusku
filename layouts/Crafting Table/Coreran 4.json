@@ -94,7 +94,7 @@
 					}
 				},
 				{
-					"type": "Spr_Player_Bella",
+					"type": "Spr_Player_MCBella",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Player kebawah diam",
@@ -103,7 +103,10 @@
 						"live-preview": false
 					},
 					"uid": 246,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"CurrentAnimation": "",
+						"IsMoving": false
+					},
 					"behaviors": {
 						"8Direction": {
 							"properties": {
@@ -114,11 +117,6 @@
 								"set-angle": "no",
 								"allow-sliding": false,
 								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"ScrollTo": {
-							"properties": {
 								"enabled": true
 							}
 						}

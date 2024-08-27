@@ -27,7 +27,7 @@
 									"objectClass": "Spr_PMPEnter",
 									"sid": 703874890132652,
 									"parameters": {
-										"object": "Spr_Player_Bella"
+										"object": "Spr_Player_MCBella"
 									}
 								}
 							],
@@ -37,7 +37,7 @@
 									"objectClass": "System",
 									"sid": 736684934041711,
 									"parameters": {
-										"layout": "Layout 2"
+										"layout": "Gedung1_Floor1"
 									}
 								}
 							],
@@ -51,7 +51,7 @@
 									"objectClass": "Spr_PembayaranEnter",
 									"sid": 437476858693069,
 									"parameters": {
-										"object": "Spr_Player_Bella"
+										"object": "Spr_Player_MCBella"
 									}
 								}
 							],
@@ -61,7 +61,7 @@
 									"objectClass": "System",
 									"sid": 883019132956243,
 									"parameters": {
-										"layout": "Layout 3"
+										"layout": "Gedung1_Keuangan"
 									}
 								}
 							],
@@ -75,7 +75,7 @@
 									"objectClass": "Spr_RegistrasiEnter",
 									"sid": 163920420114255,
 									"parameters": {
-										"object": "Spr_Player_Bella"
+										"object": "Spr_Player_MCBella"
 									}
 								}
 							],
@@ -85,7 +85,7 @@
 									"objectClass": "System",
 									"sid": 116983984826229,
 									"parameters": {
-										"layout": "Layout 4"
+										"layout": "Gedung1_Pendaftaran"
 									}
 								}
 							],
@@ -109,7 +109,7 @@
 									"objectClass": "Spr_PMPExit",
 									"sid": 626003379247881,
 									"parameters": {
-										"object": "Spr_Player_Bella"
+										"object": "Spr_Player_MCBella"
 									}
 								}
 							],
@@ -119,7 +119,7 @@
 									"objectClass": "System",
 									"sid": 539423933662646,
 									"parameters": {
-										"layout": "Layout 5"
+										"layout": "BL_Frontb"
 									}
 								}
 							],
@@ -133,7 +133,7 @@
 									"objectClass": "Spr_PembayaranExit",
 									"sid": 106222316633253,
 									"parameters": {
-										"object": "Spr_Player_Bella"
+										"object": "Spr_Player_MCBella"
 									}
 								}
 							],
@@ -143,7 +143,7 @@
 									"objectClass": "System",
 									"sid": 323685560856332,
 									"parameters": {
-										"layout": "Layout 2"
+										"layout": "Gedung1_Floor1"
 									}
 								}
 							],
@@ -157,7 +157,7 @@
 									"objectClass": "Spr_RegistrasiExit",
 									"sid": 217669157342178,
 									"parameters": {
-										"object": "Spr_Player_Bella"
+										"object": "Spr_Player_MCBella"
 									}
 								}
 							],
@@ -167,7 +167,7 @@
 									"objectClass": "System",
 									"sid": 236708259694210,
 									"parameters": {
-										"layout": "Layout 2"
+										"layout": "Gedung1_Floor1"
 									}
 								}
 							],
@@ -178,6 +178,36 @@
 				}
 			],
 			"sid": 656115054298476
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 648812828777838
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 445624405442573
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 403375400649457,
+					"parameters": {
+						"audio-file": "wind",
+						"loop": "looping",
+						"volume": "-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 810992187145357
 		}
 	],
 	"sid": 932350374578162

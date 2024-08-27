@@ -65,7 +65,8 @@
 			"Arrow",
 			"Sprite13",
 			"Sprite24",
-			"RumahBella"
+			"RumahBella",
+			"Camera"
 		],
 		"subfolders": [
 			{
@@ -96,7 +97,7 @@
 									"Sprite12"
 								],
 								"subfolders": [],
-								"name": "Layout 1"
+								"name": "BL_Front"
 							},
 							{
 								"items": [
@@ -144,6 +145,13 @@
 								],
 								"subfolders": [],
 								"name": "Layout 4"
+							},
+							{
+								"items": [
+									"Spr_TpBL"
+								],
+								"subfolders": [],
+								"name": "RumahMC"
 							}
 						],
 						"name": "InGame"
@@ -164,7 +172,7 @@
 							},
 							{
 								"items": [
-									"Spr_Player_Bella"
+									"Spr_Player_MCBella"
 								],
 								"subfolders": [],
 								"name": "Player"
@@ -237,14 +245,14 @@
 		"subfolders": [
 			{
 				"items": [
-					"Layout 1",
-					"Layout 2",
-					"Layout 3",
-					"Layout 4",
-					"Layout 5",
-					"Layout 6",
-					"Layout 7",
-					"Layout 8"
+					"BL_Front",
+					"Gedung1_Floor1",
+					"Gedung1_Keuangan",
+					"Gedung1_Pendaftaran",
+					"BL_Frontb",
+					"BL_Makopala",
+					"BL_Lapangan",
+					"RumahMC"
 				],
 				"subfolders": [],
 				"name": "InGame"
@@ -264,7 +272,8 @@
 	"eventSheets": {
 		"items": [
 			"Event sheet 1",
-			"ePlayer"
+			"ePlayer",
+			"eRumahMC"
 		],
 		"subfolders": []
 	},
@@ -395,12 +404,12 @@
 		"authorEmail": "",
 		"authorWebsite": "",
 		"appId": "",
-		"pixelRounding": true,
+		"pixelRounding": false,
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
 		"fullscreenMode": "scale-outer",
-		"fullscreenQuality": "low",
+		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
 			0,
@@ -443,5 +452,5 @@
 	},
 	"viewportWidth": 480,
 	"viewportHeight": 270,
-	"firstLayout": null
+	"firstLayout": "RumahMC"
 }
