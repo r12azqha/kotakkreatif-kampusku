@@ -2,7 +2,7 @@
 	"name": "Spr_Player_MCBella",
 	"plugin-id": "Sprite",
 	"sid": 538365189423919,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [
 		{
 			"name": "CurrentAnimation",

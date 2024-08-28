@@ -1,0 +1,227 @@
+{
+	"name": "eDebug",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "eSystem"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 150559009885992
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 903958723946174,
+					"parameters": {
+						"audio-file": "wind",
+						"loop": "looping",
+						"volume": "-25",
+						"stereo-pan": "0",
+						"tag-optional": "\"wind_noise\""
+					}
+				}
+			],
+			"sid": 363318066800097
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 646009790658899,
+					"parameters": {
+						"key": 96
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 184405866494660,
+					"parameters": {
+						"layout": "Debug"
+					}
+				}
+			],
+			"sid": 465978235252122
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 141878505815303,
+					"parameters": {
+						"key": 97
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 928000947976219,
+					"parameters": {
+						"layout": "RumahMC"
+					}
+				}
+			],
+			"sid": 831578057316093
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 517894365074440,
+					"parameters": {
+						"key": 98
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 351089069323783,
+					"parameters": {
+						"layout": "Gedung1_Depan"
+					}
+				}
+			],
+			"sid": 852003599316705
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 756236259749356,
+					"parameters": {
+						"key": 99
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 218510614306157,
+					"parameters": {
+						"layout": "Gedung1_Lobby"
+					}
+				}
+			],
+			"sid": 344043757633328
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 853689681092199,
+					"parameters": {
+						"key": 100
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 533212760987315,
+					"parameters": {
+						"layout": "Gedung1_Pendaftaran"
+					}
+				}
+			],
+			"sid": 704619412772881
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 452003065671336,
+					"parameters": {
+						"key": 101
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 876723762368629,
+					"parameters": {
+						"layout": "Gedung1_Keuangan"
+					}
+				}
+			],
+			"sid": 238803046574636
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 471150779443547,
+					"parameters": {
+						"key": 102
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 775253049699155,
+					"parameters": {
+						"layout": "Gedung1_Makopala"
+					}
+				}
+			],
+			"sid": 363731751771563
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 878677067525312,
+					"parameters": {
+						"key": 103
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 407953731518378,
+					"parameters": {
+						"layout": "Lapangan"
+					}
+				}
+			],
+			"sid": 403303163569980
+		}
+	],
+	"sid": 441773975560717
+}

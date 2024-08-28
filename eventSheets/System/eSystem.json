@@ -1,0 +1,74 @@
+{
+	"name": "eSystem",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "FirstLoad",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 467166158359825
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 262499356297034,
+					"parameters": {
+						"variable": "FirstLoad"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 739205825182850,
+					"parameters": {
+						"object-to-create": "Spr_Player_MCBella",
+						"layer": "\"Player\"",
+						"x": "pTP_STARTLAYOUT.X",
+						"y": "pTP_STARTLAYOUT.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-z-elevation",
+					"objectClass": "Spr_Player_MCBella",
+					"sid": 388710946699171,
+					"parameters": {
+						"z": "1"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 837242176107825,
+					"parameters": {
+						"variable": "FirstLoad",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 506897018104157
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "ePlayer"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "TpVariable"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eDebug"
+		}
+	],
+	"sid": 930234871261788
+}

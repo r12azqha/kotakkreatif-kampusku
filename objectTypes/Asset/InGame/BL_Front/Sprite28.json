@@ -11,14 +11,26 @@
 			{
 				"frames": [
 					{
-						"width": 295,
-						"height": 538,
-						"originX": 0,
-						"originY": 1,
+						"width": 186,
+						"height": 254,
+						"originX": -0.26344086021505375,
+						"originY": 0.9960629921259843,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3439928,
+						"imageSpriteId": 2481957,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9960629921259843,
+								0,
+								0.9960629921259843
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

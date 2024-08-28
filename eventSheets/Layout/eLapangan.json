@@ -1,0 +1,35 @@
+{
+	"name": "eLapangan",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "eSystem"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 190163822912569
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 489277002679278,
+					"parameters": {
+						"audio-file": "wind",
+						"loop": "looping",
+						"volume": "-25",
+						"stereo-pan": "0",
+						"tag-optional": "\"wind_noise\""
+					}
+				}
+			],
+			"sid": 653088263289603
+		}
+	],
+	"sid": 984517484456363
+}

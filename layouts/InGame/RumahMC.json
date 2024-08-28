@@ -2,7 +2,7 @@
 	"name": "RumahMC",
 	"layers": [
 		{
-			"name": "Layer 0",
+			"name": "Ground",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
@@ -19,39 +19,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 531,
-						"y": 309,
+						"x": 536.5,
+						"y": 304,
 						"width": 1073,
 						"height": 608,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Spr_TpBL",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 290,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 717.5,
-						"y": 517,
-						"width": 50,
-						"height": 190,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -95,31 +66,25 @@
 			"global": false
 		},
 		{
-			"name": "Player",
+			"name": "Teleport",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Camera",
+					"type": "pTP_Rumah",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 101,
+					"uid": 114,
 					"instanceVariables": {},
-					"behaviors": {
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
-						"x": 341,
-						"y": 523,
+						"x": 705.7178921586795,
+						"y": 559.6021771136398,
 						"width": 25,
 						"height": 42,
 						"originX": 0.5,
@@ -128,14 +93,106 @@
 							1,
 							1,
 							1,
-							1
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ctp_GerbangBL",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 290,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 732.8824928560266,
+						"y": 511.79709800457925,
+						"width": 21.00190293979756,
+						"height": 191.737488011848,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "pTP_STARTLAYOUT",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 15,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 411.5728061764632,
+						"y": 559.5980430878967,
+						"width": 25,
+						"height": 42,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
 						],
 						"angle": 0,
 						"zElevation": 0
 					}
 				}
 			],
-			"sid": 793138014775294,
+			"sid": 166270361566862,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Player",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 364120482221622,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -168,8 +225,8 @@
 	"sid": 498907196982716,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 960,
-	"height": 540,
+	"width": 1073,
+	"height": 608,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,

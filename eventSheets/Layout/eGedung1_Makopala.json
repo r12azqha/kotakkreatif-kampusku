@@ -1,0 +1,35 @@
+{
+	"name": "eGedung1_Makopala",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "eSystem"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 114692147197501
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 482267274300023,
+					"parameters": {
+						"audio-file": "wind",
+						"loop": "looping",
+						"volume": "-25",
+						"stereo-pan": "0",
+						"tag-optional": "\"wind_noise\""
+					}
+				}
+			],
+			"sid": 759232275838377
+		}
+	],
+	"sid": 755258401696154
+}

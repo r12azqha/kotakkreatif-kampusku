@@ -145,13 +145,6 @@
 								],
 								"subfolders": [],
 								"name": "Layout 4"
-							},
-							{
-								"items": [
-									"Spr_TpBL"
-								],
-								"subfolders": [],
-								"name": "RumahMC"
 							}
 						],
 						"name": "InGame"
@@ -183,7 +176,7 @@
 									"Spr_NPC_PMBWanita",
 									"Spr_NPC_Kurro",
 									"Spr_NPC_Kurro2",
-									"Spr_NPC_Landung",
+									"Spr_NPC_Farrel",
 									"Spr_NPC_Satpam",
 									"Spr_NPC_Bapak",
 									"Spr_NPC_Ibu"
@@ -210,21 +203,44 @@
 						"subfolders": [
 							{
 								"items": [
-									"Spr_PembayaranEnter",
-									"Spr_PMPEnter",
-									"Spr_RegistrasiEnter"
+									"ctp_Gedung1_Lobby",
+									"ctp_DepanGedung1",
+									"ctp_Rumah",
+									"ctp_GerbangBL",
+									"ctp_Gedung1_KeMakopalaAndus",
+									"ctp_Gedung1_MakopalaKeGedung1",
+									"ctp_Gedung1_MakopalaKeGedung1_Lobby",
+									"ctp_Gedung1_LobbyKe_Makopala",
+									"ctp_Gedung1_Keuangan",
+									"ctp_Gedung1_KeuanganKeLobby",
+									"ctp_Gedung1_Pendaftaran",
+									"ctp_Gedung1_PendaftaranKeLobby",
+									"ctp_Lapangan_KeLapangan",
+									"ctp_Lapangan_KeMakopala"
 								],
 								"subfolders": [],
-								"name": "Enter System"
+								"name": "TeleportCollision"
 							},
 							{
 								"items": [
-									"Spr_RegistrasiExit",
-									"Spr_PMPExit",
-									"Spr_PembayaranExit"
+									"pTP_GerbangBL",
+									"pTP_Rumah",
+									"pTP_STARTLAYOUT",
+									"ptp_Gedung1_Lobby",
+									"ptp_DepanGedung1",
+									"ptp_Gedung1_KeMakopalaAndus",
+									"ptp_Gedung1_MakopalaKeGedung1",
+									"ptp_Gedung1_MakopalaKeGedung1_Lobby",
+									"ptp_Gedung1_LobbyKe_Makopala",
+									"ptp_Gedung1_Keuangan",
+									"ptp_Gedung1_KeuanganKeLobby",
+									"ptp_Gedung1_Pendaftaran",
+									"ptp_Gedung1_PendaftaranKeLobby",
+									"ptp_Lapangan_KeLapangan",
+									"ptp_Lapangan_KeMakopala"
 								],
 								"subfolders": [],
-								"name": "Exit System"
+								"name": "TeleportPosition"
 							}
 						],
 						"name": "Sistem"
@@ -245,14 +261,14 @@
 		"subfolders": [
 			{
 				"items": [
-					"BL_Front",
-					"Gedung1_Floor1",
+					"Gedung1_Depan",
+					"Gedung1_Lobby",
 					"Gedung1_Keuangan",
 					"Gedung1_Pendaftaran",
-					"BL_Frontb",
-					"BL_Makopala",
-					"BL_Lapangan",
-					"RumahMC"
+					"Gedung1_Makopala",
+					"Lapangan",
+					"RumahMC",
+					"Debug"
 				],
 				"subfolders": [],
 				"name": "InGame"
@@ -270,12 +286,32 @@
 		]
 	},
 	"eventSheets": {
-		"items": [
-			"Event sheet 1",
-			"ePlayer",
-			"eRumahMC"
-		],
-		"subfolders": []
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"eRumahMC",
+					"eGedung1_Depan",
+					"eGedung1_Lobby",
+					"eGedung1_Keuangan",
+					"eGedung1_Pendaftaran",
+					"eGedung1_Makopala",
+					"eLapangan",
+					"eDebug"
+				],
+				"subfolders": [],
+				"name": "Layout"
+			},
+			{
+				"items": [
+					"ePlayer",
+					"TpVariable",
+					"eSystem"
+				],
+				"subfolders": [],
+				"name": "System"
+			}
+		]
 	},
 	"rootFileFolders": {
 		"script": {

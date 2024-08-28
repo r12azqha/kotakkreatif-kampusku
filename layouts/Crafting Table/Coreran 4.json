@@ -94,51 +94,6 @@
 					}
 				},
 				{
-					"type": "Spr_Player_MCBella",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Player kebawah diam",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 246,
-					"instanceVariables": {
-						"CurrentAnimation": "",
-						"IsMoving": false
-					},
-					"behaviors": {
-						"8Direction": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 2000,
-								"directions": "dir-8",
-								"set-angle": "no",
-								"allow-sliding": false,
-								"default-controls": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 690,
-						"y": 1066,
-						"width": 25,
-						"height": 42,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Sprite8",
 					"properties": {
 						"initially-visible": true,
@@ -410,5 +365,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Event sheet 1"
+	"eventSheet": null
 }

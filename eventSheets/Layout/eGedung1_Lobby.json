@@ -1,0 +1,10 @@
+{
+	"name": "eGedung1_Lobby",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "eSystem"
+		}
+	],
+	"sid": 289151375297681
+}
