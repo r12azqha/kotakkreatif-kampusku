@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 39700,
+	"savedWithRelease": 39702,
 	"name": "Kampusku",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -66,7 +66,8 @@
 			"Sprite13",
 			"Sprite24",
 			"RumahBella",
-			"Camera"
+			"Camera",
+			"Transition"
 		],
 		"subfolders": [
 			{
@@ -306,7 +307,8 @@
 				"items": [
 					"ePlayer",
 					"TpVariable",
-					"eSystem"
+					"eSystem",
+					"Transition"
 				],
 				"subfolders": [],
 				"name": "System"

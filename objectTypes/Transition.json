@@ -1,0 +1,58 @@
+{
+	"name": "Transition",
+	"plugin-id": "Sprite",
+	"sid": 511351600100435,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "State",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 177503042435390
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 720,
+						"height": 640,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7959281,
+						"collisionPoly": {
+							"points": [
+								0.002074688796680498,
+								0.003676470588235294,
+								0.9979253112033195,
+								0.003676470588235294,
+								0.9979253112033195,
+								0.9963235294117647,
+								0.002074688796680498,
+								0.9963235294117647
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 913223650712076,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
