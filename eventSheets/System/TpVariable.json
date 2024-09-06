@@ -440,6 +440,21 @@
 					],
 					"actions": [
 						{
+							"callFunction": "Transition",
+							"sid": 382032628884181,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 674429600093127,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 275102495690066,
@@ -481,6 +496,21 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 865808207570953,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 996850497506167,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
@@ -524,6 +554,21 @@
 					],
 					"actions": [
 						{
+							"callFunction": "Transition",
+							"sid": 845430282082165,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 682148244440264,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 931883914398255,
@@ -556,6 +601,21 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 989344743696545,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 794034358311875,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
@@ -590,6 +650,21 @@
 					],
 					"actions": [
 						{
+							"callFunction": "Transition",
+							"sid": 921078821022986,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 687483364748826,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 974974002155976,
@@ -622,6 +697,21 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 148722914483776,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 774537008078545,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
@@ -656,6 +746,21 @@
 					],
 					"actions": [
 						{
+							"callFunction": "Transition",
+							"sid": 444500594162023,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 905756194043147,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 221004408624668,
@@ -688,6 +793,21 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 987545150295390,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 644047435777298,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
@@ -722,6 +842,21 @@
 					],
 					"actions": [
 						{
+							"callFunction": "Transition",
+							"sid": 768901082103956,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 988256288649735,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 660606884576165,
@@ -754,6 +889,21 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 162161939226964,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 172365423246046,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
@@ -788,6 +938,21 @@
 					],
 					"actions": [
 						{
+							"callFunction": "Transition",
+							"sid": 958505165204513,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 966464356861332,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 351706559941628,
@@ -820,6 +985,21 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 270914100702720,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 945103834812380,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
@@ -854,6 +1034,21 @@
 					],
 					"actions": [
 						{
+							"callFunction": "Transition",
+							"sid": 846030394516874,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 787432609865060,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 325915186976469,
@@ -887,6 +1082,21 @@
 					],
 					"actions": [
 						{
+							"callFunction": "Transition",
+							"sid": 348533711389051,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 352948049285160,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 904432956588830,
@@ -919,6 +1129,21 @@
 						}
 					],
 					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 164315003155028,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 837402431638193,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
