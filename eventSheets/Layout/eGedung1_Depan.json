@@ -3,11 +3,7 @@
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "eSystem"
-		},
-		{
-			"eventType": "include",
-			"includeSheet": "Transition"
+			"includeSheet": "MAIN"
 		},
 		{
 			"eventType": "block",

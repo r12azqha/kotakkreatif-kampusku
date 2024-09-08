@@ -3,11 +3,7 @@
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "eSystem"
-		},
-		{
-			"eventType": "include",
-			"includeSheet": "Transition"
+			"includeSheet": "MAIN"
 		}
 	],
 	"sid": 964645562919865

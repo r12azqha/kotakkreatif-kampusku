@@ -4,7 +4,18 @@
 	"sid": 498832759503256,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 950179966839470
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine2",
+			"sid": 979531159788896
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -13,8 +24,8 @@
 					{
 						"width": 31,
 						"height": 20,
-						"originX": 0.5161290322580645,
-						"originY": 0.55,
+						"originX": 0.4838709677419355,
+						"originY": 0.8,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,

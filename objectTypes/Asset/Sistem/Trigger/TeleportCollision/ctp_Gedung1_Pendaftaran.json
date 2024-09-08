@@ -1,0 +1,50 @@
+{
+	"name": "ctp_Gedung1_Pendaftaran",
+	"plugin-id": "Sprite",
+	"sid": 197084209730153,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.08664021164021164,
+						"originY": 0.9133597883597884,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1331762,
+						"collisionPoly": {
+							"points": [
+								0.08664021164021164,
+								0.08664021164021164,
+								0.9133597883597884,
+								0.08664021164021164,
+								0.9133597883597884,
+								0.9133597883597884,
+								0.08664021164021164,
+								0.9133597883597884
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 922365250141452,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

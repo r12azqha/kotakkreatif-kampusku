@@ -1,0 +1,1172 @@
+{
+	"name": "sTpVariable",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "tpke",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 138678919114431
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Check Variable then set player to \"p\" for positions",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 460549465565580
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 681545129235088
+						}
+					],
+					"sid": 941003633847384,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 801118793132655,
+									"parameters": {
+										"variable": "tpke",
+										"comparison": 0,
+										"value": "\"tp_Rumah\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 887044764231576,
+									"parameters": {
+										"x": "pTP_Rumah.X",
+										"y": "pTP_Rumah.Y"
+									}
+								}
+							],
+							"sid": 566437112674827
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 994317574933620,
+									"parameters": {
+										"variable": "tpke",
+										"comparison": 0,
+										"value": "\"tp_GerbangBL\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 879448395585651,
+									"parameters": {
+										"x": "pTP_GerbangBL.X",
+										"y": "pTP_GerbangBL.Y"
+									}
+								}
+							],
+							"sid": 592461808661159
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 561027634294341,
+									"parameters": {
+										"variable": "tpke",
+										"comparison": 0,
+										"value": "\"tp_Gedung1_Lobby\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 400825701404793,
+									"parameters": {
+										"x": "ptp_Gedung1_Lobby.X",
+										"y": "ptp_Gedung1_Lobby.Y"
+									}
+								}
+							],
+							"sid": 761777413921074
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 923337362954177,
+									"parameters": {
+										"variable": "tpke",
+										"comparison": 0,
+										"value": "\"tp_DepanGedung1\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 993991065653853,
+									"parameters": {
+										"x": "ptp_DepanGedung1.X",
+										"y": "ptp_DepanGedung1.Y"
+									}
+								}
+							],
+							"sid": 173398589583278
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 681201964936676,
+									"parameters": {
+										"variable": "tpke",
+										"comparison": 0,
+										"value": "\"tp_Gedung1_KeMakopalaAndus\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 924452344038257,
+									"parameters": {
+										"x": "ptp_Gedung1_KeMakopalaAndus.X",
+										"y": "ptp_Gedung1_KeMakopalaAndus.Y"
+									}
+								}
+							],
+							"sid": 835736803493576
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 603824327351699,
+									"parameters": {
+										"variable": "tpke",
+										"comparison": 0,
+										"value": "\"tp_Gedung1_MakopalaKeGedung1\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 582152877901373,
+									"parameters": {
+										"x": "ptp_Gedung1_MakopalaKeGedung1.X",
+										"y": "ptp_Gedung1_MakopalaKeGedung1.Y"
+									}
+								}
+							],
+							"sid": 349721405904583
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 358074471187948,
+									"parameters": {
+										"variable": "tpke",
+										"comparison": 0,
+										"value": "\"tp_Gedung1_MakopalaKeGedung1_Lobby\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 289202711290051,
+									"parameters": {
+										"x": "ptp_Gedung1_MakopalaKeGedung1_Lobby.X",
+										"y": "ptp_Gedung1_MakopalaKeGedung1_Lobby.Y"
+									}
+								}
+							],
+							"sid": 754948319988074
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 955783619435170,
+									"parameters": {
+										"variable": "tpke",
+										"comparison": 0,
+										"value": "\"tp_Gedung1_LobbyKe_Makopala\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 366250448198184,
+									"parameters": {
+										"x": "ptp_Gedung1_LobbyKe_Makopala.X",
+										"y": "ptp_Gedung1_LobbyKe_Makopala.Y"
+									}
+								}
+							],
+							"sid": 253627189387115
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 506670805037082,
+									"parameters": {
+										"variable": "tpke",
+										"comparison": 0,
+										"value": "\"tp_Gedung1_Keuangan\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 516572633202352,
+									"parameters": {
+										"x": "ptp_Gedung1_Keuangan.X",
+										"y": "ptp_Gedung1_Keuangan.Y"
+									}
+								}
+							],
+							"sid": 957928700843792
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 275061735010115,
+									"parameters": {
+										"variable": "tpke",
+										"comparison": 0,
+										"value": "\"tp_Gedung1_KeuanganKeLobby\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 493481814980350,
+									"parameters": {
+										"x": "ptp_Gedung1_KeuanganKeLobby.X",
+										"y": "ptp_Gedung1_KeuanganKeLobby.Y"
+									}
+								}
+							],
+							"sid": 111506960076571
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 938024667872503,
+									"parameters": {
+										"variable": "tpke",
+										"comparison": 0,
+										"value": "\"tp_Gedung1_Pendaftaran\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 246457701258563,
+									"parameters": {
+										"x": "ptp_Gedung1_Pendaftaran.X",
+										"y": "ptp_Gedung1_Pendaftaran.Y"
+									}
+								}
+							],
+							"sid": 726929206090216
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 849548865780045,
+									"parameters": {
+										"variable": "tpke",
+										"comparison": 0,
+										"value": "\"tp_Gedung1_PendaftaranKeLobby\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 678734674553662,
+									"parameters": {
+										"x": "ptp_Gedung1_PendaftaranKeLobby.X",
+										"y": "ptp_Gedung1_PendaftaranKeLobby.Y"
+									}
+								}
+							],
+							"sid": 204201230603744
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 527209764327630,
+									"parameters": {
+										"variable": "tpke",
+										"comparison": 0,
+										"value": "\"tp_Lapangan_KeMakopala\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 603553877667984,
+									"parameters": {
+										"x": "ptp_Lapangan_KeMakopala.X",
+										"y": "ptp_Lapangan_KeMakopala.Y"
+									}
+								}
+							],
+							"sid": 468893010470876
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 999144280227915,
+									"parameters": {
+										"variable": "tpke",
+										"comparison": 0,
+										"value": "\"tp_Lapangan_KeLapangan\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 269240568013115,
+									"parameters": {
+										"x": "ptp_Lapangan_KeLapangan.X",
+										"y": "ptp_Lapangan_KeLapangan.Y"
+									}
+								}
+							],
+							"sid": 985857671720400
+						}
+					]
+				}
+			],
+			"sid": 604403025129524
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Check for \"c\" Collision touched",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 583974727702676,
+							"parameters": {
+								"object": "ctp_Rumah"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 382032628884181,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 674429600093127,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 275102495690066,
+							"parameters": {
+								"variable": "tpke",
+								"value": "\"tp_Rumah\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 837840587916252,
+							"parameters": {
+								"instance-variable": "CurrentAnimation",
+								"value": "\"LeftIdle\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 850880615842547,
+							"parameters": {
+								"layout": "RumahMC"
+							}
+						}
+					],
+					"sid": 365663696857509
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 453645209349552,
+							"parameters": {
+								"object": "ctp_GerbangBL"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 865808207570953,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 996850497506167,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 491715586132613,
+							"parameters": {
+								"variable": "tpke",
+								"value": "\"tp_GerbangBL\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 964095159695516,
+							"parameters": {
+								"instance-variable": "CurrentAnimation",
+								"value": "\"LeftIdle\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 638605691184081,
+							"parameters": {
+								"layout": "Gedung1_Depan"
+							}
+						}
+					],
+					"sid": 494390430868596
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 419664203233971,
+							"parameters": {
+								"object": "ctp_Gedung1_Lobby"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 845430282082165,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 682148244440264,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 931883914398255,
+							"parameters": {
+								"variable": "tpke",
+								"value": "\"tp_Gedung1_Lobby\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 558617431149785,
+							"parameters": {
+								"layout": "Gedung1_Lobby"
+							}
+						}
+					],
+					"sid": 115957718083944
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 102392299710073,
+							"parameters": {
+								"object": "ctp_DepanGedung1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 989344743696545,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 794034358311875,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 297122488570007,
+							"parameters": {
+								"variable": "tpke",
+								"value": "\"tp_DepanGedung1\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 905282004296159,
+							"parameters": {
+								"layout": "Gedung1_Depan"
+							}
+						}
+					],
+					"sid": 829451885130173
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 368639873469004,
+							"parameters": {
+								"object": "ctp_Gedung1_KeMakopalaAndus"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 921078821022986,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 687483364748826,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 974974002155976,
+							"parameters": {
+								"variable": "tpke",
+								"value": "\"tp_Gedung1_MakopalaAndus\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 926824622234577,
+							"parameters": {
+								"layout": "Gedung1_Makopala"
+							}
+						}
+					],
+					"sid": 645474124133095
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 750254671503428,
+							"parameters": {
+								"object": "ctp_Gedung1_KeMakopalaAndus"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 148722914483776,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 774537008078545,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 671720907379550,
+							"parameters": {
+								"variable": "tpke",
+								"value": "\"tp_Gedung1_KeMakopalaAndus\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 735184648472309,
+							"parameters": {
+								"layout": "Gedung1_Makopala"
+							}
+						}
+					],
+					"sid": 860162499659893
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 243162810407148,
+							"parameters": {
+								"object": "ctp_Gedung1_MakopalaKeGedung1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 444500594162023,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 905756194043147,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 221004408624668,
+							"parameters": {
+								"variable": "tpke",
+								"value": "\"tp_Gedung1_MakopalaKeGedung1\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 997326670738280,
+							"parameters": {
+								"layout": "Gedung1_Depan"
+							}
+						}
+					],
+					"sid": 399799055266646
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 511813114002348,
+							"parameters": {
+								"object": "ctp_Gedung1_MakopalaKeGedung1_Lobby"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 987545150295390,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 644047435777298,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 975002934551321,
+							"parameters": {
+								"variable": "tpke",
+								"value": "\"tp_Gedung1_MakopalaKeGedung1_Lobby\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 621226374255211,
+							"parameters": {
+								"layout": "Gedung1_Lobby"
+							}
+						}
+					],
+					"sid": 747434292990563
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 710914058952779,
+							"parameters": {
+								"object": "ctp_Gedung1_LobbyKe_Makopala"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 768901082103956,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 988256288649735,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 660606884576165,
+							"parameters": {
+								"variable": "tpke",
+								"value": "\"tp_Gedung1_LobbyKe_Makopala\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 112010267369889,
+							"parameters": {
+								"layout": "Gedung1_Makopala"
+							}
+						}
+					],
+					"sid": 938799356490461
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 262459081553652,
+							"parameters": {
+								"object": "ctp_Gedung1_Keuangan"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 162161939226964,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 172365423246046,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 270976408393045,
+							"parameters": {
+								"variable": "tpke",
+								"value": "\"tp_Gedung1_Keuangan\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 622340257604612,
+							"parameters": {
+								"layout": "Gedung1_Keuangan"
+							}
+						}
+					],
+					"sid": 646266824672477
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 288499867682972,
+							"parameters": {
+								"object": "ctp_Gedung1_KeuanganKeLobby"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 958505165204513,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 966464356861332,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 351706559941628,
+							"parameters": {
+								"variable": "tpke",
+								"value": "\"tp_Gedung1_KeuanganKeLobby\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 222278837641928,
+							"parameters": {
+								"layout": "Gedung1_Lobby"
+							}
+						}
+					],
+					"sid": 805800803353438
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 148716436390785,
+							"parameters": {
+								"object": "ctp_Gedung1_Pendaftaran"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 270914100702720,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 945103834812380,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 183363318118723,
+							"parameters": {
+								"variable": "tpke",
+								"value": "\"tp_Gedung1_Pendaftaran\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 911074578971302,
+							"parameters": {
+								"layout": "Gedung1_Pendaftaran"
+							}
+						}
+					],
+					"sid": 277342844217872
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 923348938429764,
+							"parameters": {
+								"object": "ctp_Gedung1_PendaftaranKeLobby"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 846030394516874,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 787432609865060,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 325915186976469,
+							"parameters": {
+								"variable": "tpke",
+								"value": "\"tp_Gedung1_PendaftaranKeLobby\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 841780427993760,
+							"parameters": {
+								"layout": "Gedung1_Lobby"
+							}
+						}
+					],
+					"sid": 887218566465015
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 298010012943556,
+							"parameters": {
+								"object": "ctp_Lapangan_KeLapangan"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 348533711389051,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 352948049285160,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 904432956588830,
+							"parameters": {
+								"variable": "tpke",
+								"value": "\"tp_Lapangan_KeLapangan\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 416787403189266,
+							"parameters": {
+								"layout": "Lapangan"
+							}
+						}
+					],
+					"sid": 363701413948692
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 953614876862592,
+							"parameters": {
+								"object": "ctp_Lapangan_KeMakopala"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Transition",
+							"sid": 164315003155028,
+							"parameters": [
+								"\"In\""
+							]
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 837402431638193,
+							"parameters": {
+								"seconds": "0.3"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 233054018699967,
+							"parameters": {
+								"variable": "tpke",
+								"value": "\"tp_Lapangan_KeMakopala\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 694889279961782,
+							"parameters": {
+								"layout": "Gedung1_Makopala"
+							}
+						}
+					],
+					"sid": 742753404330387
+				}
+			],
+			"sid": 879709932592744
+		}
+	],
+	"sid": 775543953030638
+}

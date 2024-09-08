@@ -4,8 +4,15 @@
 	"name": "Kampusku",
 	"runtime": "c3",
 	"useWorker": "auto",
-	"bundleAddons": false,
+	"bundleAddons": true,
 	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"bundled": false
+		},
 		{
 			"type": "plugin",
 			"id": "Audio",
@@ -28,9 +35,38 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "shadowlight",
+			"name": "Shadow light",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "skymen_better_input_manager",
+			"name": "Better Input Manager",
+			"author": "skymen",
+			"bundled": true,
+			"version": "1.0.0.3"
+		},
+		{
 			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Persist",
+			"name": "Persist",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -45,6 +81,13 @@
 			"type": "behavior",
 			"id": "scrollto",
 			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "shadowcaster",
+			"name": "Shadow caster",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -67,7 +110,13 @@
 			"Sprite24",
 			"RumahBella",
 			"Camera",
-			"Transition"
+			"Transition",
+			"ShadowLight",
+			"dialog_box",
+			"dialog_text",
+			"AJAX",
+			"BetterInputManager",
+			"dialog_box_name"
 		],
 		"subfolders": [
 			{
@@ -80,7 +129,7 @@
 								"items": [
 									"Sprite",
 									"Sprite21",
-									"Sprite22",
+									"Tree",
 									"Sprite20",
 									"Sprite19",
 									"Sprite18",
@@ -176,7 +225,7 @@
 									"Spr_NPC_PMBPria",
 									"Spr_NPC_PMBWanita",
 									"Spr_NPC_Kurro",
-									"Spr_NPC_Kurro2",
+									"Spr_NPC_Kurro_Jacket",
 									"Spr_NPC_Farrel",
 									"Spr_NPC_Satpam",
 									"Spr_NPC_Bapak",
@@ -199,49 +248,55 @@
 					},
 					{
 						"items": [
-							"Spr_Collision"
+							"Spr_WallCollision"
 						],
 						"subfolders": [
 							{
-								"items": [
-									"ctp_Gedung1_Lobby",
-									"ctp_DepanGedung1",
-									"ctp_Rumah",
-									"ctp_GerbangBL",
-									"ctp_Gedung1_KeMakopalaAndus",
-									"ctp_Gedung1_MakopalaKeGedung1",
-									"ctp_Gedung1_MakopalaKeGedung1_Lobby",
-									"ctp_Gedung1_LobbyKe_Makopala",
-									"ctp_Gedung1_Keuangan",
-									"ctp_Gedung1_KeuanganKeLobby",
-									"ctp_Gedung1_Pendaftaran",
-									"ctp_Gedung1_PendaftaranKeLobby",
-									"ctp_Lapangan_KeLapangan",
-									"ctp_Lapangan_KeMakopala"
+								"items": [],
+								"subfolders": [
+									{
+										"items": [
+											"ctp_Gedung1_Lobby",
+											"ctp_DepanGedung1",
+											"ctp_Rumah",
+											"ctp_GerbangBL",
+											"ctp_Gedung1_KeMakopalaAndus",
+											"ctp_Gedung1_MakopalaKeGedung1",
+											"ctp_Gedung1_MakopalaKeGedung1_Lobby",
+											"ctp_Gedung1_LobbyKe_Makopala",
+											"ctp_Gedung1_Keuangan",
+											"ctp_Gedung1_KeuanganKeLobby",
+											"ctp_Gedung1_Pendaftaran",
+											"ctp_Gedung1_PendaftaranKeLobby",
+											"ctp_Lapangan_KeLapangan",
+											"ctp_Lapangan_KeMakopala"
+										],
+										"subfolders": [],
+										"name": "TeleportCollision"
+									},
+									{
+										"items": [
+											"pTP_GerbangBL",
+											"pTP_Rumah",
+											"pTP_STARTLAYOUT",
+											"ptp_Gedung1_Lobby",
+											"ptp_DepanGedung1",
+											"ptp_Gedung1_KeMakopalaAndus",
+											"ptp_Gedung1_MakopalaKeGedung1",
+											"ptp_Gedung1_MakopalaKeGedung1_Lobby",
+											"ptp_Gedung1_LobbyKe_Makopala",
+											"ptp_Gedung1_Keuangan",
+											"ptp_Gedung1_KeuanganKeLobby",
+											"ptp_Gedung1_Pendaftaran",
+											"ptp_Gedung1_PendaftaranKeLobby",
+											"ptp_Lapangan_KeLapangan",
+											"ptp_Lapangan_KeMakopala"
+										],
+										"subfolders": [],
+										"name": "TeleportPosition"
+									}
 								],
-								"subfolders": [],
-								"name": "TeleportCollision"
-							},
-							{
-								"items": [
-									"pTP_GerbangBL",
-									"pTP_Rumah",
-									"pTP_STARTLAYOUT",
-									"ptp_Gedung1_Lobby",
-									"ptp_DepanGedung1",
-									"ptp_Gedung1_KeMakopalaAndus",
-									"ptp_Gedung1_MakopalaKeGedung1",
-									"ptp_Gedung1_MakopalaKeGedung1_Lobby",
-									"ptp_Gedung1_LobbyKe_Makopala",
-									"ptp_Gedung1_Keuangan",
-									"ptp_Gedung1_KeuanganKeLobby",
-									"ptp_Gedung1_Pendaftaran",
-									"ptp_Gedung1_PendaftaranKeLobby",
-									"ptp_Lapangan_KeLapangan",
-									"ptp_Lapangan_KeMakopala"
-								],
-								"subfolders": [],
-								"name": "TeleportPosition"
+								"name": "Trigger"
 							}
 						],
 						"name": "Sistem"
@@ -305,10 +360,12 @@
 			},
 			{
 				"items": [
-					"ePlayer",
-					"TpVariable",
-					"eSystem",
-					"Transition"
+					"sPlayer",
+					"sTpVariable",
+					"MAIN",
+					"sTransition",
+					"sDialogBox",
+					"eTelematry"
 				],
 				"subfolders": [],
 				"name": "System"
@@ -336,9 +393,9 @@
 		"music": {
 			"items": [
 				{
-					"name": "LLS Yuuka's The-AudioConverter.webm",
+					"name": "GETOUT.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 285103852706511,
+					"sid": 317078047992341,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -437,8 +494,8 @@
 	},
 	"properties": {
 		"description": "",
-		"version": "1.0.0.0",
-		"author": "Firdaus Rizky Pratama 2172500106",
+		"version": "Alpha 1.0.1.2",
+		"author": "",
 		"authorEmail": "",
 		"authorWebsite": "",
 		"appId": "",
@@ -446,7 +503,7 @@
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
-		"fullscreenMode": "scale-outer",
+		"fullscreenMode": "letterbox-scale",
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
@@ -469,18 +526,18 @@
 			0
 		],
 		"orientations": "landscape",
-		"webgpu": "auto",
+		"webgpu": "yes",
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
 		"framerateMode": "vsync",
 		"sampling": "nearest",
 		"downscaling": "medium",
-		"renderingMode": "auto",
-		"anisotropicFiltering": "auto",
+		"renderingMode": "2d",
+		"anisotropicFiltering": "2x",
 		"zNear": 1,
 		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "splash",
+		"loaderStyle": "progress-logo",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",

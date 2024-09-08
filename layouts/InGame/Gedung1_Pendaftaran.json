@@ -216,6 +216,13 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"ShadowCaster": {
+							"properties": {
+								"height": 100,
+								"tag": "",
+								"enabled": true
+							}
 						}
 					},
 					"world": {
@@ -259,6 +266,13 @@
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
+							}
+						},
+						"ShadowCaster": {
+							"properties": {
+								"height": 100,
+								"tag": "",
+								"enabled": true
 							}
 						}
 					},
@@ -437,7 +451,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -473,7 +487,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -509,7 +523,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -545,7 +559,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -581,7 +595,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -617,7 +631,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -653,7 +667,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -673,9 +687,9 @@
 					},
 					"world": {
 						"x": 274,
-						"y": 142,
+						"y": 138,
 						"width": 106,
-						"height": 12,
+						"height": 8,
 						"originX": 0,
 						"originY": 1,
 						"color": [
@@ -689,7 +703,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -709,9 +723,9 @@
 					},
 					"world": {
 						"x": 352,
-						"y": 214,
+						"y": 210,
 						"width": 28.000000000000004,
-						"height": 36,
+						"height": 32,
 						"originX": 0,
 						"originY": 1,
 						"color": [
@@ -725,7 +739,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -745,9 +759,9 @@
 					},
 					"world": {
 						"x": 310,
-						"y": 218,
+						"y": 210,
 						"width": 34,
-						"height": 36,
+						"height": 28.000000000000004,
 						"originX": 0,
 						"originY": 1,
 						"color": [
@@ -761,7 +775,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",

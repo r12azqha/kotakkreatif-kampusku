@@ -658,6 +658,13 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"ShadowCaster": {
+							"properties": {
+								"height": 100,
+								"tag": "",
+								"enabled": true
+							}
 						}
 					},
 					"world": {
@@ -701,6 +708,13 @@
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
+							}
+						},
+						"ShadowCaster": {
+							"properties": {
+								"height": 100,
+								"tag": "",
+								"enabled": true
 							}
 						}
 					},
@@ -1133,8 +1147,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 588,
-						"y": 430,
+						"x": 466,
+						"y": 334,
 						"width": 25,
 						"height": 42,
 						"originX": 0.5,
@@ -1185,7 +1199,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1221,7 +1235,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1257,7 +1271,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1293,7 +1307,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1329,7 +1343,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1348,9 +1362,9 @@
 						}
 					},
 					"world": {
-						"x": 1090,
+						"x": 1094,
 						"y": 364,
-						"width": 28.000000000000004,
+						"width": 24,
 						"height": 70,
 						"originX": 0,
 						"originY": 1,
@@ -1365,7 +1379,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1401,7 +1415,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1437,7 +1451,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1473,7 +1487,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1509,7 +1523,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1530,7 +1544,7 @@
 					"world": {
 						"x": 114,
 						"y": 246,
-						"width": 28.000000000000004,
+						"width": 26,
 						"height": 100,
 						"originX": 0,
 						"originY": 1,
@@ -1545,7 +1559,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1566,7 +1580,7 @@
 					"world": {
 						"x": 116,
 						"y": 364,
-						"width": 28.000000000000004,
+						"width": 22,
 						"height": 69,
 						"originX": 0,
 						"originY": 1,
@@ -1581,7 +1595,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1602,7 +1616,7 @@
 					"world": {
 						"x": 480,
 						"y": 430,
-						"width": 18,
+						"width": 14.000000000000002,
 						"height": 66,
 						"originX": 0,
 						"originY": 1,
@@ -1617,7 +1631,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1636,9 +1650,9 @@
 						}
 					},
 					"world": {
-						"x": 682,
+						"x": 684,
 						"y": 430,
-						"width": 18,
+						"width": 16,
 						"height": 98,
 						"originX": 0,
 						"originY": 1,
@@ -1653,7 +1667,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1689,7 +1703,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1725,7 +1739,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1761,7 +1775,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1797,7 +1811,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1817,9 +1831,9 @@
 					},
 					"world": {
 						"x": 428,
-						"y": 340,
+						"y": 336,
 						"width": 14.000000000000002,
-						"height": 10,
+						"height": 6,
 						"originX": 0,
 						"originY": 1,
 						"color": [
@@ -1833,7 +1847,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1869,7 +1883,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1888,10 +1902,10 @@
 						}
 					},
 					"world": {
-						"x": 248,
+						"x": 252,
 						"y": 364,
-						"width": 46,
-						"height": 22,
+						"width": 38,
+						"height": 20,
 						"originX": 0,
 						"originY": 1,
 						"color": [
@@ -1905,7 +1919,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1941,7 +1955,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -1977,7 +1991,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -2013,7 +2027,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -2049,7 +2063,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -2085,7 +2099,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -2121,7 +2135,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -2157,7 +2171,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -2193,7 +2207,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -2229,7 +2243,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -2265,7 +2279,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -2301,7 +2315,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -2337,7 +2351,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -2373,7 +2387,7 @@
 					}
 				},
 				{
-					"type": "Spr_Collision",
+					"type": "Spr_WallCollision",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -2392,9 +2406,9 @@
 						}
 					},
 					"world": {
-						"x": 1090,
+						"x": 1094,
 						"y": 220,
-						"width": 28.000000000000004,
+						"width": 24,
 						"height": 74,
 						"originX": 0,
 						"originY": 1,

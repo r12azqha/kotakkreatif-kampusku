@@ -1,0 +1,235 @@
+{
+	"name": "eTelematry",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "browserInfo",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 408237071419461
+		},
+		{
+			"eventType": "variable",
+			"name": "currentTime",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 874118416547786
+		},
+		{
+			"eventType": "variable",
+			"name": "screenResolution",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 573042255015078
+		},
+		{
+			"eventType": "variable",
+			"name": "browserLanguage",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 434262612051467
+		},
+		{
+			"eventType": "variable",
+			"name": "deviceModel",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 466037136028619
+		},
+		{
+			"eventType": "variable",
+			"name": "networkType",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 750895124252617
+		},
+		{
+			"eventType": "variable",
+			"name": "location",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 904776065892976
+		},
+		{
+			"eventType": "variable",
+			"name": "storedData",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 344658306485498
+		},
+		{
+			"eventType": "variable",
+			"name": "osInfo",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 303842568792920
+		},
+		{
+			"eventType": "variable",
+			"name": "timezone",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 215869846657176
+		},
+		{
+			"eventType": "variable",
+			"name": "connectionSpeed",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 858007534488604
+		},
+		{
+			"eventType": "variable",
+			"name": "deviceMemory",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 615257443433759
+		},
+		{
+			"eventType": "variable",
+			"name": "batteryLevel",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 215522216426836
+		},
+		{
+			"eventType": "variable",
+			"name": "viewportSize",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 862226646710749
+		},
+		{
+			"eventType": "variable",
+			"name": "cpuCores",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 815281361363185
+		},
+		{
+			"eventType": "variable",
+			"name": "deviceType",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 767435588505193
+		},
+		{
+			"eventType": "variable",
+			"name": "clientID",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 180678690937218
+		},
+		{
+			"eventType": "variable",
+			"name": "GameVersion",
+			"type": "string",
+			"initialValue": "Alpha 1.0.1.2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 778289090034146
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 115400527458445,
+					"parameters": {
+						"variable": "FirstLoad"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 866889997441631,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 860566615759205
+						}
+					],
+					"actions": [
+						{
+							"type": "script",
+							"script": "function getBrowserInfo() {\n    var userAgent = navigator.userAgent;\n    var browserName, browserVersion;\n\n    if (userAgent.indexOf(\"Chrome\") > -1) {\n        browserName = \"Chrome\";\n        browserVersion = userAgent.split(\"Chrome/\")[1].split(\" \")[0];\n    } else if (userAgent.indexOf(\"Firefox\") > -1) {\n        browserName = \"Firefox\";\n        browserVersion = userAgent.split(\"Firefox/\")[1];\n    } else if (userAgent.indexOf(\"Safari\") > -1) {\n        browserName = \"Safari\";\n        browserVersion = userAgent.split(\"Version/\")[1].split(\" \")[0];\n    } else {\n        browserName = \"Unknown\";\n        browserVersion = \"Unknown\";\n    }\n\n    return browserName + \" \" + browserVersion;\n}\n\nfunction getOSInfo() {\n    var userAgent = navigator.userAgent;\n    var osName = \"Unknown OS\";\n    var osVersion = \"Unknown Version\";\n\n    if (userAgent.indexOf(\"Windows NT 10.0\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"10\";\n    } else if (userAgent.indexOf(\"Windows NT 6.3\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"8.1\";\n    } else if (userAgent.indexOf(\"Windows NT 6.2\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"8\";\n    } else if (userAgent.indexOf(\"Windows NT 6.1\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"7\";\n    } else if (userAgent.indexOf(\"Windows NT 6.0\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"Vista\";\n    } else if (userAgent.indexOf(\"Windows NT 5.1\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"XP\";\n    } else if (userAgent.indexOf(\"Macintosh\") > -1) {\n        osName = \"Mac OS\";\n        osVersion = userAgent.split(\"Mac OS X \")[1] ? userAgent.split(\"Mac OS X \")[1].split(\")\")[0] : \"Unknown\";\n    } else if (userAgent.indexOf(\"Android\") > -1) {\n        osName = \"Android\";\n        osVersion = userAgent.split(\"Android \")[1].split(\" \")[0];\n    } else if (userAgent.indexOf(\"Linux\") > -1) {\n        osName = \"Linux\";\n    }\n\n    return osName + \" \" + osVersion;\n}\n\nfunction getDeviceType() {\n    return /Mobi|Android/i.test(navigator.userAgent) ? \"Mobile\" : \"Desktop\";\n}\n\nvar currentTime = new Date().toLocaleString();\nvar browserInfo = getBrowserInfo();\nvar osInfo = getOSInfo();\nvar screenResolution = screen.width + \"x\" + screen.height;\nvar browserLanguage = navigator.language || navigator.userLanguage;\nvar deviceModel = navigator.platform;\nvar networkType = (navigator.connection || {}).effectiveType || \"Unknown\";\nvar timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;\nvar connectionSpeed = (navigator.connection || {}).downlink || \"Unknown\";\nvar userAgentString = navigator.userAgent;\nvar cookiesEnabled = navigator.cookieEnabled ? \"Yes\" : \"No\";\nvar javascriptEnabled = \"Yes\";\nvar screenOrientation = screen.orientation ? screen.orientation.type : \"Unknown\";\nvar deviceMemory = (navigator.deviceMemory || \"Unknown\") + \" GB\";\nvar viewportSize = window.innerWidth + \"x\" + window.innerHeight;\nvar cpuCores = navigator.hardwareConcurrency || \"Unknown\";\nvar deviceType = getDeviceType();\n\nruntime.globalVars.currentTime = currentTime;\nruntime.globalVars.browserInfo = browserInfo;\nruntime.globalVars.osInfo = osInfo;\nruntime.globalVars.screenResolution = screenResolution;\nruntime.globalVars.browserLanguage = browserLanguage;\nruntime.globalVars.deviceModel = deviceModel;\nruntime.globalVars.networkType = networkType;\nruntime.globalVars.timezone = timezone;\nruntime.globalVars.connectionSpeed = connectionSpeed;\nruntime.globalVars.userAgentString = userAgentString;\nruntime.globalVars.cookiesEnabled = cookiesEnabled;\nruntime.globalVars.javascriptEnabled = javascriptEnabled;\nruntime.globalVars.screenOrientation = screenOrientation;\nruntime.globalVars.deviceMemory = deviceMemory;\nruntime.globalVars.viewportSize = viewportSize;\nruntime.globalVars.cpuCores = cpuCores;\nruntime.globalVars.deviceType = deviceType;\n\nvar gameVersion = runtime.projectVersion; // This will automatically take the project version\n\nvar storedData = localStorage.getItem(\"yourDataKey\") || \"No data\";\nruntime.globalVars.storedData = storedData;\n"
+						},
+						{
+							"type": "script",
+							"script": "function getClientID() {\n    var clientID = localStorage.getItem(\"clientID\");\n\n    // If no ID exists, generate a new one and store it in localStorage\n    if (!clientID) {\n        clientID = Math.random().toString(36).substr(2, 9); // Generate a unique ID without prefix\n        localStorage.setItem(\"clientID\", clientID);\n    }\n\n    return clientID;\n}\nvar clientID = getClientID(); // Get or create the unique client ID\nruntime.globalVars.clientID = clientID; // Store the client ID in a global variable\n"
+						},
+						{
+							"id": "post-to-url",
+							"objectClass": "AJAX",
+							"sid": 360946351894553,
+							"parameters": {
+								"tag": "\"send_discord_message\"",
+								"url": "\"https://discord.com/api/webhooks/1282016271214444556/t8OpUCemZqN6nWAHMS_dvDfYZN7GCfiyRSjBrRj-Aw1awVk2dVJgQRg6Bbin3tkn2XUC\"",
+								"data": "\"content=Client ID: \" & clientID & \". Game Launched on \" & browserInfo & \" with OS \" & osInfo & \" (\" & deviceType & \") device model \" & deviceModel & \" with \" & deviceMemory & \" and \" & cpuCores & \" CPU cores. Connection speed: \" & connectionSpeed & \" on timezone \" & timezone & \" at \" & currentTime & \". Screen resolution \" & screenResolution & \" with viewport \" & viewportSize & \". Browser language: \" & browserLanguage & \". Game Version: \" & GameVersion & \"&username=Kampusku\"\r\n\n",
+								"method": "\"POST\""
+							}
+						}
+					],
+					"sid": 591009514979948
+				}
+			]
+		}
+	],
+	"sid": 968464916981759
+}
