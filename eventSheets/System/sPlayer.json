@@ -102,173 +102,155 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 195561174858245,
-							"parameters": {
-								"key": 87
-							}
-						},
-						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 194394684388074,
+							"sid": 440279899022636,
 							"parameters": {
 								"variable": "IsDialogBoxOpen"
 							},
 							"isInverted": true
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 126275961413400,
+					"children": [
 						{
-							"id": "set-boolean-instvar",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 160331249704985,
-							"parameters": {
-								"instance-variable": "IsMoving",
-								"value": "true"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 642373492377210,
+									"parameters": {
+										"key": 87
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 440112728568007,
+									"parameters": {
+										"instance-variable": "IsMoving",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 582589337622381,
+									"parameters": {
+										"instance-variable": "CurrentAnimation",
+										"value": "\"Up\""
+									}
+								}
+							],
+							"sid": 977671571743191
 						},
 						{
-							"id": "set-instvar-value",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 345004334544696,
-							"parameters": {
-								"instance-variable": "CurrentAnimation",
-								"value": "\"Up\""
-							}
-						}
-					],
-					"sid": 914444461394548
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 659539064487686,
-							"parameters": {
-								"key": 65
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 998813723411360,
+									"parameters": {
+										"key": 65
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 648141958217684,
+									"parameters": {
+										"instance-variable": "IsMoving",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 642022555099586,
+									"parameters": {
+										"instance-variable": "CurrentAnimation",
+										"value": "\"Left\""
+									}
+								}
+							],
+							"sid": 995013914324158
 						},
 						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 129208018299837,
-							"parameters": {
-								"variable": "IsDialogBoxOpen"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 731365416500477,
-							"parameters": {
-								"instance-variable": "IsMoving",
-								"value": "true"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 960731583368835,
+									"parameters": {
+										"key": 83
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 944384756072694,
+									"parameters": {
+										"instance-variable": "IsMoving",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 283476591283008,
+									"parameters": {
+										"instance-variable": "CurrentAnimation",
+										"value": "\"Down\""
+									}
+								}
+							],
+							"sid": 759842077012836
 						},
 						{
-							"id": "set-instvar-value",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 804117921106952,
-							"parameters": {
-								"instance-variable": "CurrentAnimation",
-								"value": "\"Left\""
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 379795262363011,
+									"parameters": {
+										"key": 68
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 862730046414936,
+									"parameters": {
+										"instance-variable": "IsMoving",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 732310655162624,
+									"parameters": {
+										"instance-variable": "CurrentAnimation",
+										"value": "\"Right\""
+									}
+								}
+							],
+							"sid": 952523285186886
 						}
-					],
-					"sid": 903130950349268
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 301696693548570,
-							"parameters": {
-								"key": 83
-							}
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 174386049737846,
-							"parameters": {
-								"variable": "IsDialogBoxOpen"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 576958728719154,
-							"parameters": {
-								"instance-variable": "IsMoving",
-								"value": "true"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 428884589136242,
-							"parameters": {
-								"instance-variable": "CurrentAnimation",
-								"value": "\"Down\""
-							}
-						}
-					],
-					"sid": 353791635395858
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 132882391121358,
-							"parameters": {
-								"key": 68
-							}
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 174386049737846,
-							"parameters": {
-								"variable": "IsDialogBoxOpen"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 515240391126510,
-							"parameters": {
-								"instance-variable": "IsMoving",
-								"value": "true"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 331112083447938,
-							"parameters": {
-								"instance-variable": "CurrentAnimation",
-								"value": "\"Right\""
-							}
-						}
-					],
-					"sid": 551007016474380
+					]
 				}
 			],
 			"sid": 403377152384833
@@ -378,169 +360,151 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 366070463097171,
-							"parameters": {
-								"instance-variable": "IsMoving"
-							}
-						},
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 554498079859846,
-							"parameters": {
-								"key": 87
-							}
-						},
-						{
 							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 790601716029822,
+							"sid": 699243131475994,
 							"parameters": {
 								"variable": "IsDialogBoxOpen"
 							},
 							"isInverted": true
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 518861088894522,
+					"children": [
 						{
-							"id": "simulate-control",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 236358080456298,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"control": "up"
-							}
-						}
-					],
-					"sid": 357417576919582
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 344304453193812,
-							"parameters": {
-								"instance-variable": "IsMoving"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 160575242892945,
+									"parameters": {
+										"instance-variable": "IsMoving"
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 891147156984587,
+									"parameters": {
+										"key": 87
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 394585815307673,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "up"
+									}
+								}
+							],
+							"sid": 936785936471991
 						},
 						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 224536915852077,
-							"parameters": {
-								"key": 65
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 537856209799041,
+									"parameters": {
+										"instance-variable": "IsMoving"
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 892278913241490,
+									"parameters": {
+										"key": 65
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 320770888278028,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "left"
+									}
+								}
+							],
+							"sid": 151990074631228
 						},
 						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 520668894263606,
-							"parameters": {
-								"variable": "IsDialogBoxOpen"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 558793706017774,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"control": "left"
-							}
-						}
-					],
-					"sid": 960847310289603
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 272578008330188,
-							"parameters": {
-								"instance-variable": "IsMoving"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 649675140478554,
+									"parameters": {
+										"instance-variable": "IsMoving"
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 613090427238187,
+									"parameters": {
+										"key": 83
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 862279516646129,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 907689660464197
 						},
 						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 677129402575148,
-							"parameters": {
-								"key": 83
-							}
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 619230559733561,
-							"parameters": {
-								"variable": "IsDialogBoxOpen"
-							},
-							"isInverted": true
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 203003140473541,
+									"parameters": {
+										"instance-variable": "IsMoving"
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 484560126801830,
+									"parameters": {
+										"key": 68
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 229487798401680,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 474964300269411
 						}
-					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 740170642883941,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"control": "down"
-							}
-						}
-					],
-					"sid": 152864880012112
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 450273822464529,
-							"parameters": {
-								"instance-variable": "IsMoving"
-							}
-						},
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 160199882759233,
-							"parameters": {
-								"key": 68
-							}
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 318952471217744,
-							"parameters": {
-								"variable": "IsDialogBoxOpen"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 737936844612590,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"control": "right"
-							}
-						}
-					],
-					"sid": 799520296680290
+					]
 				}
 			],
 			"sid": 772131630576362

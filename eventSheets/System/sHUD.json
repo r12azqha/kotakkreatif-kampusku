@@ -1,0 +1,47 @@
+{
+	"name": "sHUD",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 650611828503042
+				}
+			],
+			"actions": [
+				{
+					"id": "add-layer",
+					"objectClass": "System",
+					"sid": 870034939246561,
+					"parameters": {
+						"name": "\"HUD\"",
+						"insert-by": "\"Transition\"",
+						"where": "below"
+					}
+				},
+				{
+					"id": "set-layer-parallax",
+					"objectClass": "System",
+					"sid": 143268411666761,
+					"parameters": {
+						"layer": "\"HUD\"",
+						"parallax-x": "0",
+						"parallax-y": "0"
+					}
+				}
+			],
+			"sid": 972429087052231
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "hDialogBox"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "hMobileAnalog"
+		}
+	],
+	"sid": 611471913560435
+}

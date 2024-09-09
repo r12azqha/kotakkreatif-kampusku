@@ -219,6 +219,34 @@
 						},
 						"Persist": {
 							"properties": {}
+						},
+						"Sine": {
+							"properties": {
+								"movement": "height",
+								"wave": "sine",
+								"period": 2.5,
+								"period-random": 3,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 0.5,
+								"magnitude-random": 1,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Sine2": {
+							"properties": {
+								"movement": "width",
+								"wave": "sine",
+								"period": 2.5,
+								"period-random": 3,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 0.1,
+								"magnitude-random": 0.25,
+								"enabled": true,
+								"live-preview": false
+							}
 						}
 					},
 					"world": {
@@ -227,7 +255,7 @@
 						"width": 25,
 						"height": 42,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.9523809523809523,
 						"color": [
 							1,
 							1,
@@ -1006,8 +1034,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 284.2956509948196,
-						"y": 171.96989557200322,
+						"x": 288.51479793764065,
+						"y": 117.4455350801617,
 						"width": 25,
 						"height": 42,
 						"originX": 0.5,

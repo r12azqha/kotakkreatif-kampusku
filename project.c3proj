@@ -58,6 +58,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
 			"author": "Scirra",
@@ -297,6 +304,15 @@
 									}
 								],
 								"name": "Trigger"
+							},
+							{
+								"items": [
+									"analogbg",
+									"analogjoy",
+									"analogline"
+								],
+								"subfolders": [],
+								"name": "Mobil Analog"
 							}
 						],
 						"name": "Sistem"
@@ -324,7 +340,8 @@
 					"Gedung1_Makopala",
 					"Lapangan",
 					"RumahMC",
-					"Debug"
+					"Debug",
+					"Hud"
 				],
 				"subfolders": [],
 				"name": "InGame"
@@ -364,10 +381,19 @@
 					"sTpVariable",
 					"MAIN",
 					"sTransition",
-					"sDialogBox",
-					"eTelematry"
+					"sTelematry",
+					"sHUD"
 				],
-				"subfolders": [],
+				"subfolders": [
+					{
+						"items": [
+							"hDialogBox",
+							"hMobileAnalog"
+						],
+						"subfolders": [],
+						"name": "Hud"
+					}
+				],
 				"name": "System"
 			}
 		]
@@ -494,7 +520,7 @@
 	},
 	"properties": {
 		"description": "",
-		"version": "Alpha 1.0.1.2",
+		"version": "Alpha 1.0.2.0",
 		"author": "",
 		"authorEmail": "",
 		"authorWebsite": "",
