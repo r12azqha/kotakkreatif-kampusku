@@ -6068,12 +6068,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 312,
-						"y": 182,
+						"x": 310,
+						"y": 196,
 						"width": 25,
 						"height": 42,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.9523809523809523,
 						"color": [
 							1,
 							1,
@@ -6126,12 +6126,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 604,
-						"y": 854,
+						"x": 510,
+						"y": 862,
 						"width": 25,
 						"height": 42,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.9523809523809523,
 						"color": [
 							1,
 							1,
@@ -6189,7 +6189,7 @@
 						"width": 25,
 						"height": 42,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.9523809523809523,
 						"color": [
 							1,
 							1,
@@ -6247,7 +6247,7 @@
 						"width": 25,
 						"height": 42,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.9523809523809523,
 						"color": [
 							1,
 							1,

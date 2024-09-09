@@ -5,104 +5,113 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 249876230830571
-				},
-				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 953708245391042,
+					"sid": 519399144478592,
 					"parameters": {
-						"variable": "deviceModel",
+						"variable": "deviceType",
 						"comparison": 0,
 						"value": "\"Mobile\""
 					}
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 612737711109954,
+			"children": [
 				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 267928699813503,
-					"parameters": {
-						"seconds": "0.5"
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "analogbg",
-					"sid": 618445012472138
-				},
-				{
-					"id": "destroy",
-					"objectClass": "analogjoy",
-					"sid": 745552011696270
-				},
-				{
-					"id": "destroy",
-					"objectClass": "analogline",
-					"sid": 413615363729615
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 481563843414720,
-					"parameters": {
-						"object-to-create": "analogbg",
-						"layer": "\"HUD\"",
-						"x": "75.030369",
-						"y": " 194.082035",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 549836071159015,
-					"parameters": {
-						"object-to-create": "analogjoy",
-						"layer": "\"HUD\"",
-						"x": "75.030369",
-						"y": " 194.082035",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 680618233365394,
-					"parameters": {
-						"object-to-create": "analogline",
-						"layer": "\"HUD\"",
-						"x": "75.030369",
-						"y": " 194.082035",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "analogjoy",
-					"sid": 308864031763324,
-					"parameters": {
-						"x": "analogbg.ImagePointX(0)",
-						"y": "analogbg.ImagePointY(0)"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "analogline",
-					"sid": 282932356425658,
-					"parameters": {
-						"x": "analogbg.ImagePointX(0)",
-						"y": "analogbg.ImagePointY(0)"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 535102626314169
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 552018298974704,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "analogbg",
+							"sid": 636825714848771
+						},
+						{
+							"id": "destroy",
+							"objectClass": "analogjoy",
+							"sid": 996141406723866
+						},
+						{
+							"id": "destroy",
+							"objectClass": "analogline",
+							"sid": 459260304136378
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 824142126294795,
+							"parameters": {
+								"object-to-create": "analogbg",
+								"layer": "\"HUD\"",
+								"x": "75.030369",
+								"y": " 194.082035",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 357208904278972,
+							"parameters": {
+								"object-to-create": "analogjoy",
+								"layer": "\"HUD\"",
+								"x": "75.030369",
+								"y": " 194.082035",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 317243090664907,
+							"parameters": {
+								"object-to-create": "analogline",
+								"layer": "\"HUD\"",
+								"x": "75.030369",
+								"y": " 194.082035",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "analogjoy",
+							"sid": 946775050224270,
+							"parameters": {
+								"x": "analogbg.ImagePointX(0)",
+								"y": "analogbg.ImagePointY(0)"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "analogline",
+							"sid": 642067508489781,
+							"parameters": {
+								"x": "analogbg.ImagePointX(0)",
+								"y": "analogbg.ImagePointY(0)"
+							}
+						}
+					],
+					"sid": 166054487684040
 				}
-			],
-			"sid": 948017370938121
+			]
 		},
 		{
 			"eventType": "group",
@@ -111,16 +120,6 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
-				{
-					"eventType": "variable",
-					"name": "distanceAllowed",
-					"type": "number",
-					"initialValue": "75",
-					"comment": "",
-					"isStatic": true,
-					"isConstant": false,
-					"sid": 835773601014285
-				},
 				{
 					"eventType": "block",
 					"conditions": [],
@@ -232,7 +231,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Group2",
+			"title": "PlayerMovement",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [

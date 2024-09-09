@@ -175,7 +175,7 @@
 			"eventType": "variable",
 			"name": "GameVersion",
 			"type": "string",
-			"initialValue": "Alpha 1.0.2.0",
+			"initialValue": "Alpha 1.0.2.1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
