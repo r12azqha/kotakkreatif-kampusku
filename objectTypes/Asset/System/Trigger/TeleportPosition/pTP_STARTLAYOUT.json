@@ -1,0 +1,50 @@
+{
+	"name": "pTP_STARTLAYOUT",
+	"plugin-id": "Sprite",
+	"sid": 703293347530756,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 25,
+						"height": 42,
+						"originX": 0.5,
+						"originY": 0.9523809523809523,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7697567,
+						"collisionPoly": {
+							"points": [
+								0.08333333333333333,
+								0.08333333333333333,
+								0.9166666666666666,
+								0.08333333333333333,
+								0.9166666666666666,
+								0.9166666666666666,
+								0.08333333333333333,
+								0.9166666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 483003839224125,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

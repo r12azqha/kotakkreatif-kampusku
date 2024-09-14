@@ -18,13 +18,13 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 482267274300023,
+					"sid": 189635080096882,
 					"parameters": {
 						"audio-file": "wind",
 						"loop": "looping",
-						"volume": "-25",
+						"volume": "-10",
 						"stereo-pan": "0",
-						"tag-optional": "\"wind_noise\""
+						"tag-optional": "\"ambient\""
 					}
 				}
 			],

@@ -1,0 +1,44 @@
+{
+	"name": "pInputManager",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-button-released",
+					"objectClass": "Mouse",
+					"sid": 494981212253701,
+					"parameters": {
+						"mouse-button": "left"
+					}
+				},
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 284317674215372,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-in-touch",
+					"objectClass": "Touch",
+					"sid": 696074271558640
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-down-trigger",
+					"objectClass": "InputManager",
+					"sid": 158083560367329,
+					"parameters": {
+						"input": "\"advance\""
+					}
+				}
+			],
+			"sid": 775648732324035,
+			"isOrBlock": true
+		}
+	],
+	"sid": 538919360522278
+}

@@ -113,12 +113,23 @@
 					],
 					"actions": [
 						{
+							"id": "stop",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 259033923489462,
+							"behaviorType": "8Direction"
+						},
+						{
 							"id": "set-opacity",
 							"objectClass": "Transition",
-							"sid": 940824459230447,
+							"sid": 256579331303522,
 							"parameters": {
-								"opacity": "lerp(Self.Opacity, 100, 50 * dt)"
+								"opacity": "lerp(Self.Opacity, 100, 15 * dt)"
 							}
+						},
+						{
+							"id": "stop-animation",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 158391663025470
 						}
 					],
 					"sid": 268654314945505,
@@ -136,9 +147,9 @@
 								{
 									"id": "set-opacity",
 									"objectClass": "Transition",
-									"sid": 465867440280181,
+									"sid": 774334893592886,
 									"parameters": {
-										"opacity": "0"
+										"opacity": "50"
 									}
 								}
 							],
@@ -174,9 +185,9 @@
 						{
 							"id": "set-opacity",
 							"objectClass": "Transition",
-							"sid": 938548175363345,
+							"sid": 557018238788175,
 							"parameters": {
-								"opacity": "lerp(Self.Opacity, 0, 10 * dt)"
+								"opacity": "lerp(Self.Opacity, 0, 3 * dt)"
 							}
 						}
 					],

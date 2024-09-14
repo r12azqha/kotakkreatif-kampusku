@@ -6184,8 +6184,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 436,
-						"y": 504,
+						"x": 476,
+						"y": 474,
 						"width": 25,
 						"height": 42,
 						"originX": 0.5,
@@ -6213,8 +6213,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -6,
-						"y": 389.85714285714283,
+						"x": -24,
+						"y": 390,
 						"width": 10,
 						"height": 238,
 						"originX": 0.003968253968253968,
@@ -6272,7 +6272,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 2,
-						"y": 884,
+						"y": 904,
 						"width": 628,
 						"height": 6,
 						"originX": 0.003968253968253968,
@@ -6318,7 +6318,7 @@
 			"global": false
 		},
 		{
-			"name": "Collision",
+			"name": "Wall",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
@@ -6342,9 +6342,9 @@
 						}
 					},
 					"world": {
-						"x": 242,
+						"x": 244,
 						"y": 902,
-						"width": 136,
+						"width": 134,
 						"height": 152,
 						"originX": 0,
 						"originY": 1,
@@ -6702,9 +6702,9 @@
 						}
 					},
 					"world": {
-						"x": 0,
+						"x": 244,
 						"y": 926,
-						"width": 620,
+						"width": 134,
 						"height": 46,
 						"originX": 0,
 						"originY": 1,
@@ -6741,7 +6741,7 @@
 						"x": -38,
 						"y": 932,
 						"width": 38,
-						"height": 764,
+						"height": 540,
 						"originX": 0,
 						"originY": 1,
 						"color": [
@@ -7037,7 +7037,19 @@
 	],
 	"sid": 654961502290191,
 	"nonworld-instances": [],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "vignette",
+			"name": "Vignette",
+			"instance": {
+				"isEnabled": true,
+				"parameters": {
+					"start-radius": 0.6,
+					"end-radius": 0.9
+				}
+			}
+		}
+	],
 	"width": 620,
 	"height": 880,
 	"unboundedScrolling": false,

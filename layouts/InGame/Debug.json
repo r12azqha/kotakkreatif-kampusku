@@ -189,84 +189,7 @@
 			"name": "Player",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "Spr_Player_MCBella",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Player kebawah diam",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 17,
-					"instanceVariables": {
-						"CurrentAnimation": "",
-						"IsMoving": false
-					},
-					"behaviors": {
-						"8Direction": {
-							"properties": {
-								"max-speed": 100,
-								"acceleration": 300,
-								"deceleration": 1250,
-								"directions": "dir-8",
-								"set-angle": "no",
-								"allow-sliding": true,
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"Persist": {
-							"properties": {}
-						},
-						"Sine": {
-							"properties": {
-								"movement": "height",
-								"wave": "sine",
-								"period": 2.5,
-								"period-random": 3,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 0.5,
-								"magnitude-random": 1,
-								"enabled": true,
-								"live-preview": false
-							}
-						},
-						"Sine2": {
-							"properties": {
-								"movement": "width",
-								"wave": "sine",
-								"period": 2.5,
-								"period-random": 3,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 0.1,
-								"magnitude-random": 0.25,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 284.30058049580055,
-						"y": 172.11292666183365,
-						"width": 25,
-						"height": 42,
-						"originX": 0.5,
-						"originY": 0.9523809523809523,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 681093454567607,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -1086,82 +1009,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "dialog_box",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 232,
-					"instanceVariables": {
-						"IsActive": false
-					},
-					"behaviors": {},
-					"world": {
-						"x": 240,
-						"y": 223.990089,
-						"width": 450,
-						"height": 70,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.5
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "dialog_text",
-					"properties": {
-						"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis mi vitae risus volutpat, ut posuere eros tristique. Suspendisse tempor, ex a auctor mollis, dui est fringilla eros, sed aliquam nibh risus sit amet augue. Pellentesque tempor convallis ultricies. Proin ligula ante, eleifend eget interdum nec, mattis et nunc. Mauris blandit, nunc id efficitur tempus, tellus lorem dignissim eros, ac aliquet velit diam ut orci. Pellentesque in mi ac magna aliquam aliquam vitae eget lectus. Suspendisse potenti. Quisque id nunc orci. In sit amet fringilla massa, vel varius nulla. Phasellus vel tellus in justo laoreet euismod.",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 5.5,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": false,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 230,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 23.878,
-						"y": 194.98395672271317,
-						"width": 432.2447681474175,
-						"height": 59.40657442720007,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "dialog_box_name",
 					"properties": {
 						"initially-visible": true,
@@ -1187,6 +1034,82 @@
 							1,
 							1,
 							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Spr_Player_MCBella",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Player kebawah diam",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 288,
+					"instanceVariables": {
+						"CurrentAnimation": "",
+						"IsMoving": false
+					},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": 100,
+								"acceleration": 300,
+								"deceleration": 1250,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"allow-sliding": true,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"Persist": {
+							"properties": {}
+						},
+						"Sine": {
+							"properties": {
+								"movement": "height",
+								"wave": "sine",
+								"period": 2.5,
+								"period-random": 3,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 0.5,
+								"magnitude-random": 1,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Sine2": {
+							"properties": {
+								"movement": "width",
+								"wave": "sine",
+								"period": 2.5,
+								"period-random": 3,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 0.1,
+								"magnitude-random": 0.25,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 218.44355088108514,
+						"y": 114.27305273649378,
+						"width": 25,
+						"height": 42,
+						"originX": 0.5,
+						"originY": 0.9523809523809523,
+						"color": [
+							1,
+							1,
+							1,
+							1
 						],
 						"angle": 0,
 						"zElevation": 0

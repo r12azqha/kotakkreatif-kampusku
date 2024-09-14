@@ -16,6 +16,12 @@
 			],
 			"actions": [
 				{
+					"id": "stop",
+					"objectClass": "Spr_Player_MCBella",
+					"sid": 798590082571845,
+					"behaviorType": "8Direction"
+				},
+				{
 					"id": "move-to-layer",
 					"objectClass": "Spr_Player_MCBella",
 					"sid": 516700806096342,
@@ -63,7 +69,30 @@
 					}
 				}
 			],
-			"sid": 122037410619148
+			"sid": 122037410619148,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 627351297553718,
+							"parameters": {
+								"variable": "FirstLoad"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"type": "script",
+							"script": "function getClientID() {\n    var clientID = localStorage.getItem(\"clientID\");\n\n    // If no ID exists, generate a new one and store it in localStorage\n    if (!clientID) {\n        clientID = Math.random().toString(36).substr(2, 9); // Generate a unique ID without prefix\n        localStorage.setItem(\"clientID\", clientID);\n    }\n\n    return clientID;\n}\n\nfunction sendRequestWithDecodedURL(base64URL) {\n    // Decode Base64 string\n    var decodedURL = atob(base64URL); // Decode Base64 to a URL string\n\n    // Get current values\n    var currentDate = new Date();\n    var currentTime = currentDate.toLocaleTimeString(); // Get only the time part\n    var clientID = getClientID(); // Get or create the unique client ID\n    const currentLayout = runtime.layout.name;\n\n    // Create the data string to send\n    var payload = \"content=Client ID: \" + clientID + \n                  \". Current Time: \" + currentTime + \n                  \". Current Layout: \" + currentLayout +\n                  \".&username=Kampusku\";\n\n    // Create a new XMLHttpRequest object\n    var xhr = new XMLHttpRequest();\n\n    // Configure it: POST-request for the URL\n    xhr.open(\"POST\", decodedURL, true);\n\n    // Set request headers (if needed)\n    xhr.setRequestHeader(\"Content-Type\", \"application/x-www-form-urlencoded\");\n\n    // Set up a callback for when the request completes\n    xhr.onreadystatechange = function() {\n        if (xhr.readyState === XMLHttpRequest.DONE) {\n            if (xhr.status !== 200) {\n                // Error\n                console.error(\"Request failed with status:\", xhr.status);\n            }\n        }\n    };\n\n    // Send the request with the payload\n    xhr.send(payload);\n}\n\n// Example Base64-encoded URL (replace with your own)\nvar base64URL = \"aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTI4MjAxNjI3MTIxNDQ0NDU1Ni90OE9wVUNlbVpxTjZuV0FITVNfZHZEZllaTjdHQ2ZpeVJTakJyUmotQXcxYXdWazJkVkpnUVJnNkJiaW4zdGtuMlhVQw==\"; // Example: \"https://example.com/param\"\n\n// Call the function with the Base64 URL\nsendRequestWithDecodedURL(base64URL);\n"
+						}
+					],
+					"sid": 323845323813869
+				}
+			]
 		},
 		{
 			"eventType": "comment",

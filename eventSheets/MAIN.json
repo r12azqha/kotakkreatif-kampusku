@@ -1,0 +1,171 @@
+{
+	"name": "MAIN",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "FirstLoad",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 467166158359825
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "sTelematry"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "pInputManager"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 262499356297034,
+					"parameters": {
+						"variable": "FirstLoad"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 739205825182850,
+					"parameters": {
+						"object-to-create": "Spr_Player_MCBella",
+						"layer": "\"Player\"",
+						"x": "pTP_STARTLAYOUT.X",
+						"y": "pTP_STARTLAYOUT.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-z-elevation",
+					"objectClass": "Spr_Player_MCBella",
+					"sid": 388710946699171,
+					"parameters": {
+						"z": "1"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 837242176107825,
+					"parameters": {
+						"variable": "FirstLoad",
+						"value": "false"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 576602534707323,
+					"parameters": {
+						"audio-file": "blbg",
+						"loop": "looping",
+						"volume": "-5",
+						"stereo-pan": "0",
+						"tag-optional": "\"music\""
+					}
+				}
+			],
+			"sid": 506897018104157
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "sPlayer"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "sTransition"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "sTpVariable"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eDebug"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "sHUD"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-suspend",
+					"objectClass": "System",
+					"sid": 557322733659007
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Transition",
+					"sid": 580568198434146,
+					"parameters": [
+						"\"Out\""
+					]
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 485812387420421,
+					"parameters": {
+						"audio-file": "GETOUT",
+						"loop": "not-looping",
+						"volume": "-25",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 851573647876552
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 308714921619430,
+					"parameters": {
+						"key": 90
+					}
+				}
+			],
+			"actions": [],
+			"sid": 649643006724931
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "Spr_Player_MCBella",
+					"sid": 270522666730337
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Spr_Player_MCBella",
+					"sid": 639347425316545,
+					"parameters": {
+						"x": "pTP_STARTLAYOUT.X",
+						"y": "pTP_STARTLAYOUT.Y"
+					}
+				}
+			],
+			"sid": 906611169872001
+		}
+	],
+	"sid": 930234871261788
+}

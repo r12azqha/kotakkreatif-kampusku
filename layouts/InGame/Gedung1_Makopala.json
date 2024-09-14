@@ -4660,8 +4660,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 353,
-						"y": 470,
+						"x": 465,
+						"y": 54,
 						"width": 25,
 						"height": 42,
 						"originX": 0.5,
@@ -4718,7 +4718,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 900,
+						"x": 911,
 						"y": 1074,
 						"width": 10,
 						"height": 200,
@@ -4805,8 +4805,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 84.2420634920635,
-						"y": 6,
+						"x": 84,
+						"y": -18,
 						"width": 683,
 						"height": 10,
 						"originX": 0.003968253968253968,

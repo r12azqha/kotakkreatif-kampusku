@@ -29,9 +29,12 @@
 					],
 					"actions": [
 						{
-							"id": "stop-all",
+							"id": "stop",
 							"objectClass": "Audio",
-							"sid": 681545129235088
+							"sid": 191570710611004,
+							"parameters": {
+								"tag": "\"ambient\""
+							}
 						}
 					],
 					"sid": 941003633847384,
@@ -438,50 +441,64 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 365663696857509,
+					"children": [
 						{
-							"callFunction": "Transition",
-							"sid": 382032628884181,
-							"parameters": [
-								"\"In\""
-							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 674429600093127,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 275102495690066,
-							"parameters": {
-								"variable": "tpke",
-								"value": "\"tp_Rumah\""
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 837840587916252,
-							"parameters": {
-								"instance-variable": "CurrentAnimation",
-								"value": "\"LeftIdle\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 850880615842547,
-							"parameters": {
-								"layout": "RumahMC"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 774818784602788
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Transition",
+									"sid": 382032628884181,
+									"parameters": [
+										"\"In\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 647308332899994,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 275102495690066,
+									"parameters": {
+										"variable": "tpke",
+										"value": "\"tp_Rumah\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 837840587916252,
+									"parameters": {
+										"instance-variable": "CurrentAnimation",
+										"value": "\"LeftIdle\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 850880615842547,
+									"parameters": {
+										"layout": "RumahMC"
+									}
+								}
+							],
+							"sid": 798639587115561
 						}
-					],
-					"sid": 365663696857509
+					]
 				},
 				{
 					"eventType": "block",
@@ -495,50 +512,64 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 494390430868596,
+					"children": [
 						{
-							"callFunction": "Transition",
-							"sid": 865808207570953,
-							"parameters": [
-								"\"In\""
-							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 996850497506167,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 491715586132613,
-							"parameters": {
-								"variable": "tpke",
-								"value": "\"tp_GerbangBL\""
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 964095159695516,
-							"parameters": {
-								"instance-variable": "CurrentAnimation",
-								"value": "\"LeftIdle\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 638605691184081,
-							"parameters": {
-								"layout": "Gedung1_Depan"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 990562203021465
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Transition",
+									"sid": 865808207570953,
+									"parameters": [
+										"\"In\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 770102953827097,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 491715586132613,
+									"parameters": {
+										"variable": "tpke",
+										"value": "\"tp_GerbangBL\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 964095159695516,
+									"parameters": {
+										"instance-variable": "CurrentAnimation",
+										"value": "\"LeftIdle\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 638605691184081,
+									"parameters": {
+										"layout": "Gedung1_Depan"
+									}
+								}
+							],
+							"sid": 966097627310813
 						}
-					],
-					"sid": 494390430868596
+					]
 				},
 				{
 					"eventType": "block",
@@ -552,41 +583,55 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 115957718083944,
+					"children": [
 						{
-							"callFunction": "Transition",
-							"sid": 845430282082165,
-							"parameters": [
-								"\"In\""
-							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 682148244440264,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 931883914398255,
-							"parameters": {
-								"variable": "tpke",
-								"value": "\"tp_Gedung1_Lobby\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 558617431149785,
-							"parameters": {
-								"layout": "Gedung1_Lobby"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 410631640216082
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Transition",
+									"sid": 845430282082165,
+									"parameters": [
+										"\"In\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 332380195352125,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 931883914398255,
+									"parameters": {
+										"variable": "tpke",
+										"value": "\"tp_Gedung1_Lobby\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 558617431149785,
+									"parameters": {
+										"layout": "Gedung1_Lobby"
+									}
+								}
+							],
+							"sid": 936983409094491
 						}
-					],
-					"sid": 115957718083944
+					]
 				},
 				{
 					"eventType": "block",
@@ -600,41 +645,55 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 829451885130173,
+					"children": [
 						{
-							"callFunction": "Transition",
-							"sid": 989344743696545,
-							"parameters": [
-								"\"In\""
-							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 794034358311875,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 297122488570007,
-							"parameters": {
-								"variable": "tpke",
-								"value": "\"tp_DepanGedung1\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 905282004296159,
-							"parameters": {
-								"layout": "Gedung1_Depan"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 199566415624445
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Transition",
+									"sid": 989344743696545,
+									"parameters": [
+										"\"In\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 942127467048307,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 297122488570007,
+									"parameters": {
+										"variable": "tpke",
+										"value": "\"tp_DepanGedung1\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 905282004296159,
+									"parameters": {
+										"layout": "Gedung1_Depan"
+									}
+								}
+							],
+							"sid": 862092770296183
 						}
-					],
-					"sid": 829451885130173
+					]
 				},
 				{
 					"eventType": "block",
@@ -648,41 +707,55 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 645474124133095,
+					"children": [
 						{
-							"callFunction": "Transition",
-							"sid": 921078821022986,
-							"parameters": [
-								"\"In\""
-							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 687483364748826,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 974974002155976,
-							"parameters": {
-								"variable": "tpke",
-								"value": "\"tp_Gedung1_MakopalaAndus\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 926824622234577,
-							"parameters": {
-								"layout": "Gedung1_Makopala"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 725799088998372
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Transition",
+									"sid": 921078821022986,
+									"parameters": [
+										"\"In\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 537207442567129,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 974974002155976,
+									"parameters": {
+										"variable": "tpke",
+										"value": "\"tp_Gedung1_MakopalaAndus\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 926824622234577,
+									"parameters": {
+										"layout": "Gedung1_Makopala"
+									}
+								}
+							],
+							"sid": 310305671527169
 						}
-					],
-					"sid": 645474124133095
+					]
 				},
 				{
 					"eventType": "block",
@@ -696,41 +769,55 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 860162499659893,
+					"children": [
 						{
-							"callFunction": "Transition",
-							"sid": 148722914483776,
-							"parameters": [
-								"\"In\""
-							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 774537008078545,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 671720907379550,
-							"parameters": {
-								"variable": "tpke",
-								"value": "\"tp_Gedung1_KeMakopalaAndus\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 735184648472309,
-							"parameters": {
-								"layout": "Gedung1_Makopala"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 980188296459166
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Transition",
+									"sid": 148722914483776,
+									"parameters": [
+										"\"In\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 843971988726792,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 671720907379550,
+									"parameters": {
+										"variable": "tpke",
+										"value": "\"tp_Gedung1_KeMakopalaAndus\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 735184648472309,
+									"parameters": {
+										"layout": "Gedung1_Makopala"
+									}
+								}
+							],
+							"sid": 994249586094067
 						}
-					],
-					"sid": 860162499659893
+					]
 				},
 				{
 					"eventType": "block",
@@ -744,41 +831,55 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 399799055266646,
+					"children": [
 						{
-							"callFunction": "Transition",
-							"sid": 444500594162023,
-							"parameters": [
-								"\"In\""
-							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 905756194043147,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 221004408624668,
-							"parameters": {
-								"variable": "tpke",
-								"value": "\"tp_Gedung1_MakopalaKeGedung1\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 997326670738280,
-							"parameters": {
-								"layout": "Gedung1_Depan"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 277419271471740
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Transition",
+									"sid": 444500594162023,
+									"parameters": [
+										"\"In\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 793041754874090,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 221004408624668,
+									"parameters": {
+										"variable": "tpke",
+										"value": "\"tp_Gedung1_MakopalaKeGedung1\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 997326670738280,
+									"parameters": {
+										"layout": "Gedung1_Depan"
+									}
+								}
+							],
+							"sid": 834276123822739
 						}
-					],
-					"sid": 399799055266646
+					]
 				},
 				{
 					"eventType": "block",
@@ -792,41 +893,55 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 747434292990563,
+					"children": [
 						{
-							"callFunction": "Transition",
-							"sid": 987545150295390,
-							"parameters": [
-								"\"In\""
-							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 644047435777298,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 975002934551321,
-							"parameters": {
-								"variable": "tpke",
-								"value": "\"tp_Gedung1_MakopalaKeGedung1_Lobby\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 621226374255211,
-							"parameters": {
-								"layout": "Gedung1_Lobby"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 372876016882253
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Transition",
+									"sid": 987545150295390,
+									"parameters": [
+										"\"In\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 910714031345015,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 975002934551321,
+									"parameters": {
+										"variable": "tpke",
+										"value": "\"tp_Gedung1_MakopalaKeGedung1_Lobby\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 621226374255211,
+									"parameters": {
+										"layout": "Gedung1_Lobby"
+									}
+								}
+							],
+							"sid": 670977119627586
 						}
-					],
-					"sid": 747434292990563
+					]
 				},
 				{
 					"eventType": "block",
@@ -840,41 +955,55 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 938799356490461,
+					"children": [
 						{
-							"callFunction": "Transition",
-							"sid": 768901082103956,
-							"parameters": [
-								"\"In\""
-							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 988256288649735,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 660606884576165,
-							"parameters": {
-								"variable": "tpke",
-								"value": "\"tp_Gedung1_LobbyKe_Makopala\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 112010267369889,
-							"parameters": {
-								"layout": "Gedung1_Makopala"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 784247733517290
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Transition",
+									"sid": 768901082103956,
+									"parameters": [
+										"\"In\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 414560720196651,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 660606884576165,
+									"parameters": {
+										"variable": "tpke",
+										"value": "\"tp_Gedung1_LobbyKe_Makopala\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 112010267369889,
+									"parameters": {
+										"layout": "Gedung1_Makopala"
+									}
+								}
+							],
+							"sid": 459859082102007
 						}
-					],
-					"sid": 938799356490461
+					]
 				},
 				{
 					"eventType": "block",
@@ -888,41 +1017,55 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 646266824672477,
+					"children": [
 						{
-							"callFunction": "Transition",
-							"sid": 162161939226964,
-							"parameters": [
-								"\"In\""
-							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 172365423246046,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 270976408393045,
-							"parameters": {
-								"variable": "tpke",
-								"value": "\"tp_Gedung1_Keuangan\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 622340257604612,
-							"parameters": {
-								"layout": "Gedung1_Keuangan"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 707627861462621
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Transition",
+									"sid": 162161939226964,
+									"parameters": [
+										"\"In\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 482817445451609,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 270976408393045,
+									"parameters": {
+										"variable": "tpke",
+										"value": "\"tp_Gedung1_Keuangan\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 622340257604612,
+									"parameters": {
+										"layout": "Gedung1_Keuangan"
+									}
+								}
+							],
+							"sid": 111124805844078
 						}
-					],
-					"sid": 646266824672477
+					]
 				},
 				{
 					"eventType": "block",
@@ -936,41 +1079,55 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 805800803353438,
+					"children": [
 						{
-							"callFunction": "Transition",
-							"sid": 958505165204513,
-							"parameters": [
-								"\"In\""
-							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 966464356861332,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 351706559941628,
-							"parameters": {
-								"variable": "tpke",
-								"value": "\"tp_Gedung1_KeuanganKeLobby\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 222278837641928,
-							"parameters": {
-								"layout": "Gedung1_Lobby"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 242814967190127
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Transition",
+									"sid": 958505165204513,
+									"parameters": [
+										"\"In\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 152642713664747,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 351706559941628,
+									"parameters": {
+										"variable": "tpke",
+										"value": "\"tp_Gedung1_KeuanganKeLobby\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 222278837641928,
+									"parameters": {
+										"layout": "Gedung1_Lobby"
+									}
+								}
+							],
+							"sid": 494657555157238
 						}
-					],
-					"sid": 805800803353438
+					]
 				},
 				{
 					"eventType": "block",
@@ -984,41 +1141,55 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 277342844217872,
+					"children": [
 						{
-							"callFunction": "Transition",
-							"sid": 270914100702720,
-							"parameters": [
-								"\"In\""
-							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 945103834812380,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 183363318118723,
-							"parameters": {
-								"variable": "tpke",
-								"value": "\"tp_Gedung1_Pendaftaran\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 911074578971302,
-							"parameters": {
-								"layout": "Gedung1_Pendaftaran"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 873375800356509
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Transition",
+									"sid": 270914100702720,
+									"parameters": [
+										"\"In\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 319296464755978,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 183363318118723,
+									"parameters": {
+										"variable": "tpke",
+										"value": "\"tp_Gedung1_Pendaftaran\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 911074578971302,
+									"parameters": {
+										"layout": "Gedung1_Pendaftaran"
+									}
+								}
+							],
+							"sid": 333726941105484
 						}
-					],
-					"sid": 277342844217872
+					]
 				},
 				{
 					"eventType": "block",
@@ -1032,41 +1203,55 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 887218566465015,
+					"children": [
 						{
-							"callFunction": "Transition",
-							"sid": 846030394516874,
-							"parameters": [
-								"\"In\""
-							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 787432609865060,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 325915186976469,
-							"parameters": {
-								"variable": "tpke",
-								"value": "\"tp_Gedung1_PendaftaranKeLobby\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 841780427993760,
-							"parameters": {
-								"layout": "Gedung1_Lobby"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 405766548471679
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Transition",
+									"sid": 846030394516874,
+									"parameters": [
+										"\"In\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 586090245608906,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 325915186976469,
+									"parameters": {
+										"variable": "tpke",
+										"value": "\"tp_Gedung1_PendaftaranKeLobby\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 841780427993760,
+									"parameters": {
+										"layout": "Gedung1_Lobby"
+									}
+								}
+							],
+							"sid": 963748493827473
 						}
-					],
-					"sid": 887218566465015
+					]
 				},
 				{
 					"eventType": "block",
@@ -1080,41 +1265,55 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 363701413948692,
+					"children": [
 						{
-							"callFunction": "Transition",
-							"sid": 348533711389051,
-							"parameters": [
-								"\"In\""
-							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 352948049285160,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 904432956588830,
-							"parameters": {
-								"variable": "tpke",
-								"value": "\"tp_Lapangan_KeLapangan\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 416787403189266,
-							"parameters": {
-								"layout": "Lapangan"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 505198436158196
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Transition",
+									"sid": 348533711389051,
+									"parameters": [
+										"\"In\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 454306833246089,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 904432956588830,
+									"parameters": {
+										"variable": "tpke",
+										"value": "\"tp_Lapangan_KeLapangan\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 416787403189266,
+									"parameters": {
+										"layout": "Lapangan"
+									}
+								}
+							],
+							"sid": 504831803363246
 						}
-					],
-					"sid": 363701413948692
+					]
 				},
 				{
 					"eventType": "block",
@@ -1128,41 +1327,55 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 742753404330387,
+					"children": [
 						{
-							"callFunction": "Transition",
-							"sid": 164315003155028,
-							"parameters": [
-								"\"In\""
-							]
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 837402431638193,
-							"parameters": {
-								"seconds": "0.3"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 233054018699967,
-							"parameters": {
-								"variable": "tpke",
-								"value": "\"tp_Lapangan_KeMakopala\""
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 694889279961782,
-							"parameters": {
-								"layout": "Gedung1_Makopala"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 569969867234144
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Transition",
+									"sid": 164315003155028,
+									"parameters": [
+										"\"In\""
+									]
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 913645882552642,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 233054018699967,
+									"parameters": {
+										"variable": "tpke",
+										"value": "\"tp_Lapangan_KeMakopala\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 694889279961782,
+									"parameters": {
+										"layout": "Gedung1_Makopala"
+									}
+								}
+							],
+							"sid": 440240470496581
 						}
-					],
-					"sid": 742753404330387
+					]
 				}
 			],
 			"sid": 879709932592744

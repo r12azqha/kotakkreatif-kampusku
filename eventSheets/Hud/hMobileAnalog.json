@@ -1,0 +1,548 @@
+{
+	"name": "hMobileAnalog",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 519399144478592,
+					"parameters": {
+						"variable": "deviceType",
+						"comparison": 0,
+						"value": "\"Mobile\""
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 980155947320634,
+					"parameters": {
+						"variable": "IsDialogBoxOpen"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 612737711109954,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 535102626314169
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 552018298974704,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "anal_bg",
+							"sid": 636825714848771
+						},
+						{
+							"id": "destroy",
+							"objectClass": "anal_joy",
+							"sid": 996141406723866
+						},
+						{
+							"id": "destroy",
+							"objectClass": "anal_line",
+							"sid": 459260304136378
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 824142126294795,
+							"parameters": {
+								"object-to-create": "anal_bg",
+								"layer": "\"HUD\"",
+								"x": "75.030369",
+								"y": " 194.082035",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 357208904278972,
+							"parameters": {
+								"object-to-create": "anal_joy",
+								"layer": "\"HUD\"",
+								"x": "75.030369",
+								"y": " 194.082035",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 317243090664907,
+							"parameters": {
+								"object-to-create": "anal_line",
+								"layer": "\"HUD\"",
+								"x": "75.030369",
+								"y": " 194.082035",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "anal_joy",
+							"sid": 946775050224270,
+							"parameters": {
+								"x": "anal_bg.ImagePointX(0)",
+								"y": "anal_bg.ImagePointY(0)"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "anal_line",
+							"sid": 642067508489781,
+							"parameters": {
+								"x": "anal_bg.ImagePointX(0)",
+								"y": "anal_bg.ImagePointY(0)"
+							}
+						}
+					],
+					"sid": 166054487684040,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 466821957791733
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 364119480563633,
+					"parameters": {
+						"variable": "deviceType",
+						"comparison": 0,
+						"value": "\"Mobile\""
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 763410574057512,
+					"parameters": {
+						"variable": "IsDialogBoxOpen"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 685886849557184,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 889536886086574
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "anal_bg",
+							"sid": 292059173906210
+						},
+						{
+							"id": "destroy",
+							"objectClass": "anal_joy",
+							"sid": 400888809649719
+						},
+						{
+							"id": "destroy",
+							"objectClass": "anal_line",
+							"sid": 942491211355521
+						}
+					],
+					"sid": 704569941987843
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group1",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "anal_line",
+							"sid": 169229175589691,
+							"parameters": {
+								"x": "anal_joy.X",
+								"y": "anal_joy.Y"
+							}
+						}
+					],
+					"sid": 486450738848085
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 921087601497355,
+							"parameters": {
+								"first-value": "distance(anal_bg.X,anal_bg.Y,anal_joy.X,anal_joy.Y)",
+								"comparison": 3,
+								"second-value": "40"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "anal_line",
+							"sid": 492898861709391,
+							"parameters": {
+								"width": "distance(anal_bg.X,anal_bg.Y,anal_joy.X,anal_joy.Y)"
+							}
+						}
+					],
+					"sid": 282963432408829
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 264942908242510
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "anal_joy",
+							"sid": 477973717458796,
+							"parameters": {
+								"x": "anal_line.ImagePointX(1)",
+								"y": "anal_line.ImagePointY(1)"
+							}
+						}
+					],
+					"sid": 603177777609194
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "anal_joy",
+							"sid": 438525294611175,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "anal_joy",
+							"sid": 752487394366057,
+							"parameters": {
+								"x": "anal_bg.ImagePointX(0)",
+								"y": "anal_bg.ImagePointY(0)"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 613637827659738,
+							"parameters": {
+								"instance-variable": "IsMoving",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 424237339301630,
+							"parameters": {
+								"instance-variable": "CurrentAnimation",
+								"value": "\"DownIdle\""
+							}
+						}
+					],
+					"sid": 531188462449779,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-dragging",
+							"objectClass": "anal_joy",
+							"sid": 499522494315988,
+							"behaviorType": "DragDrop",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "anal_joy",
+							"sid": 200716878232656,
+							"parameters": {
+								"x": "anal_bg.ImagePointX(0)",
+								"y": "anal_bg.ImagePointY(0)"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 274397239943850,
+							"parameters": {
+								"instance-variable": "IsMoving",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 575379673282775,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 896395303826615
+				}
+			],
+			"sid": 206948974951727
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "PlayerMovement",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-dragging",
+							"objectClass": "anal_joy",
+							"sid": 879239149740296,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [],
+					"sid": 936277105601455,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-within-angle",
+									"objectClass": "anal_line",
+									"sid": 383769263065622,
+									"parameters": {
+										"within": "60",
+										"angle": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 980161177397059,
+									"parameters": {
+										"instance-variable": "CurrentAnimation",
+										"value": "\"Right\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 688228048774978,
+									"parameters": {
+										"instance-variable": "IsMoving",
+										"value": "true"
+									}
+								},
+								{
+									"id": "simulate-control",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 271509503519579,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 848585796751566
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-within-angle",
+									"objectClass": "anal_line",
+									"sid": 300918555592586,
+									"parameters": {
+										"within": "60",
+										"angle": "90"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 341929739897155,
+									"parameters": {
+										"instance-variable": "CurrentAnimation",
+										"value": "\"Down\""
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 248742733209676,
+									"parameters": {
+										"instance-variable": "IsMoving",
+										"value": "true"
+									}
+								},
+								{
+									"id": "simulate-control",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 663615266371041,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "down"
+									}
+								}
+							],
+							"sid": 814333354944171
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-within-angle",
+									"objectClass": "anal_line",
+									"sid": 260416629178384,
+									"parameters": {
+										"within": "60",
+										"angle": "180"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 202814955782402,
+									"parameters": {
+										"instance-variable": "CurrentAnimation",
+										"value": "\"Left\""
+									}
+								},
+								{
+									"id": "simulate-control",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 569338940925141,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "left"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 387991818996839,
+									"parameters": {
+										"instance-variable": "IsMoving",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 938636464820772
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-within-angle",
+									"objectClass": "anal_line",
+									"sid": 115110476013054,
+									"parameters": {
+										"within": "60",
+										"angle": "270"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 560738780672275,
+									"parameters": {
+										"instance-variable": "IsMoving",
+										"value": "true"
+									}
+								},
+								{
+									"id": "simulate-control",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 612332793920631,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"control": "up"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Spr_Player_MCBella",
+									"sid": 930209363245403,
+									"parameters": {
+										"instance-variable": "CurrentAnimation",
+										"value": "\"Up\""
+									}
+								}
+							],
+							"sid": 457197672464860
+						}
+					]
+				}
+			],
+			"sid": 135291004469021
+		}
+	],
+	"sid": 893039929415711
+}

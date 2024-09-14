@@ -22,10 +22,32 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Camera3D",
+			"name": "3D camera",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "SkymenInputManager",
+			"name": "Input Manager",
+			"author": "skymen",
+			"bundled": true,
+			"version": "1.0.0.4"
 		},
 		{
 			"type": "plugin",
@@ -38,6 +60,13 @@
 			"type": "plugin",
 			"id": "Text",
 			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -104,6 +133,13 @@
 			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "vignette",
+			"name": "Vignette",
+			"author": "Brad Larson",
+			"bundled": false
 		}
 	],
 	"uniqueId": "sxwb5o8jqhy",
@@ -123,7 +159,11 @@
 			"dialog_text",
 			"AJAX",
 			"BetterInputManager",
-			"dialog_box_name"
+			"dialog_box_name",
+			"3DCamera",
+			"InputManager",
+			"Mouse",
+			"Touch"
 		],
 		"subfolders": [
 			{
@@ -204,7 +244,7 @@
 								"name": "Layout 4"
 							}
 						],
-						"name": "InGame"
+						"name": "Layout"
 					},
 					{
 						"items": [],
@@ -307,15 +347,22 @@
 							},
 							{
 								"items": [
-									"analogbg",
-									"analogjoy",
-									"analogline"
+									"anal_bg",
+									"anal_joy",
+									"anal_line"
 								],
 								"subfolders": [],
-								"name": "Mobil Analog"
+								"name": "MobileAnalog"
 							}
 						],
-						"name": "Sistem"
+						"name": "System"
+					},
+					{
+						"items": [
+							"mood_char"
+						],
+						"subfolders": [],
+						"name": "dialog"
 					}
 				],
 				"name": "Asset"
@@ -359,7 +406,9 @@
 		]
 	},
 	"eventSheets": {
-		"items": [],
+		"items": [
+			"MAIN"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -370,7 +419,8 @@
 					"eGedung1_Pendaftaran",
 					"eGedung1_Makopala",
 					"eLapangan",
-					"eDebug"
+					"eDebug",
+					"eHud"
 				],
 				"subfolders": [],
 				"name": "Layout"
@@ -379,22 +429,27 @@
 				"items": [
 					"sPlayer",
 					"sTpVariable",
-					"MAIN",
 					"sTransition",
 					"sTelematry",
 					"sHUD"
 				],
-				"subfolders": [
-					{
-						"items": [
-							"hDialogBox",
-							"hMobileAnalog"
-						],
-						"subfolders": [],
-						"name": "Hud"
-					}
-				],
+				"subfolders": [],
 				"name": "System"
+			},
+			{
+				"items": [
+					"hDialogBox",
+					"hMobileAnalog"
+				],
+				"subfolders": [],
+				"name": "Hud"
+			},
+			{
+				"items": [
+					"pInputManager"
+				],
+				"subfolders": [],
+				"name": "Plugin"
 			}
 		]
 	},
@@ -412,6 +467,22 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "GETOUT.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 317078047992341,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "duck-quack.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 799558532773549,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
@@ -419,9 +490,9 @@
 		"music": {
 			"items": [
 				{
-					"name": "GETOUT.webm",
+					"name": "blbg.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 317078047992341,
+					"sid": 249891424635751,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -520,7 +591,7 @@
 	},
 	"properties": {
 		"description": "",
-		"version": "Alpha 1.0.2.1",
+		"version": "Alpha 1.0.4.0",
 		"author": "",
 		"authorEmail": "",
 		"authorWebsite": "",
@@ -529,7 +600,7 @@
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
-		"fullscreenMode": "letterbox-scale",
+		"fullscreenMode": "scale-inner",
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
@@ -559,7 +630,7 @@
 		"sampling": "nearest",
 		"downscaling": "medium",
 		"renderingMode": "2d",
-		"anisotropicFiltering": "2x",
+		"anisotropicFiltering": "auto",
 		"zNear": 1,
 		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,
