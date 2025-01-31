@@ -16,6 +16,8 @@
 						"live-preview": false
 					},
 					"uid": 76,
+					"sid": 245770017123662,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -45,6 +47,8 @@
 						"live-preview": false
 					},
 					"uid": 80,
+					"sid": 923306053897516,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -74,6 +78,8 @@
 						"live-preview": false
 					},
 					"uid": 81,
+					"sid": 767049812203474,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -103,6 +109,8 @@
 						"live-preview": false
 					},
 					"uid": 83,
+					"sid": 442680434583016,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -153,40 +161,6 @@
 			"global": false
 		},
 		{
-			"name": "Player",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [],
-			"sid": 568112487824047,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"isHTMLElementsLayer": false,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
 			"name": "Objective",
 			"overriden": 0,
 			"subLayers": [],
@@ -201,6 +175,8 @@
 						"live-preview": false
 					},
 					"uid": 242,
+					"sid": 698927527262402,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -252,6 +228,8 @@
 						"live-preview": false
 					},
 					"uid": 243,
+					"sid": 985953476931095,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -324,6 +302,40 @@
 			"global": false
 		},
 		{
+			"name": "Player",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 568112487824047,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
 			"name": "Teleport",
 			"overriden": 0,
 			"subLayers": [],
@@ -338,6 +350,8 @@
 						"live-preview": false
 					},
 					"uid": 292,
+					"sid": 211484582619272,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -367,6 +381,8 @@
 						"live-preview": false
 					},
 					"uid": 101,
+					"sid": 834411796961457,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -396,6 +412,8 @@
 						"live-preview": false
 					},
 					"uid": 126,
+					"sid": 381524419802544,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -460,6 +478,8 @@
 						"live-preview": false
 					},
 					"uid": 37,
+					"sid": 594616476725386,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -496,6 +516,8 @@
 						"live-preview": false
 					},
 					"uid": 38,
+					"sid": 708431278940073,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -532,6 +554,8 @@
 						"live-preview": false
 					},
 					"uid": 39,
+					"sid": 523841451561310,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -568,6 +592,8 @@
 						"live-preview": false
 					},
 					"uid": 42,
+					"sid": 978166948703830,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -604,6 +630,8 @@
 						"live-preview": false
 					},
 					"uid": 43,
+					"sid": 377632574708606,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -640,6 +668,8 @@
 						"live-preview": false
 					},
 					"uid": 44,
+					"sid": 113986959566100,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -676,6 +706,8 @@
 						"live-preview": false
 					},
 					"uid": 63,
+					"sid": 213537941965879,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -712,6 +744,8 @@
 						"live-preview": false
 					},
 					"uid": 65,
+					"sid": 670871396123501,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -748,6 +782,8 @@
 						"live-preview": false
 					},
 					"uid": 67,
+					"sid": 800881055293195,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -784,6 +820,8 @@
 						"live-preview": false
 					},
 					"uid": 72,
+					"sid": 631484889059736,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -805,6 +843,41 @@
 							1,
 							1,
 							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Pendaftaran",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 326,
+					"sid": 598794099270906,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 598794099270906,
+						"expanded": true
+					},
+					"world": {
+						"x": 166,
+						"y": 220,
+						"width": 40,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.25
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -875,6 +948,10 @@
 			"global": false
 		}
 	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
 	"sid": 320147704551478,
 	"nonworld-instances": [],
 	"effectTypes": [],

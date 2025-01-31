@@ -32,6 +32,16 @@
 			"sid": 509480067279317
 		},
 		{
+			"eventType": "variable",
+			"name": "ResetDialogue",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 915062246694576
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -56,7 +66,7 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 362838710716567,
+					"sid": 162838830813644,
 					"parameters": {
 						"seconds": "0.1"
 					}
@@ -88,7 +98,8 @@
 					}
 				}
 			],
-			"sid": 457164230395773
+			"sid": 457164230395773,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -118,7 +129,8 @@
 					}
 				}
 			],
-			"sid": 284030406860117
+			"sid": 284030406860117,
+			"disabled": true
 		},
 		{
 			"eventType": "group",
@@ -140,7 +152,7 @@
 						{
 							"id": "set-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 451709482806762,
+							"sid": 742868147074189,
 							"parameters": {
 								"variable": "isDialogueFinished",
 								"value": "true"
@@ -209,27 +221,15 @@
 												{
 													"id": "wait",
 													"objectClass": "System",
-													"sid": 875562280899048,
+													"sid": 481544012496563,
 													"parameters": {
-														"seconds": "0.1"
+														"seconds": "0.0001"
 													}
 												},
 												{
 													"id": "typewriter-finish",
 													"objectClass": "dialog_text",
-													"sid": 141803252498427
-												},
-												{
-													"id": "play",
-													"objectClass": "Audio",
-													"sid": 821812340209370,
-													"parameters": {
-														"audio-file": "duck-quack",
-														"loop": "not-looping",
-														"volume": "0",
-														"stereo-pan": "0",
-														"tag-optional": "\"\""
-													}
+													"sid": 330489952268306
 												}
 											],
 											"sid": 797608827978769
@@ -280,24 +280,27 @@
 											],
 											"actions": [
 												{
+													"id": "destroy",
+													"objectClass": "dialog_text",
+													"sid": 331250766293353,
+													"disabled": true
+												},
+												{
 													"id": "add-to-eventvar",
 													"objectClass": "System",
-													"sid": 578111479810352,
+													"sid": 156663657985057,
 													"parameters": {
 														"variable": "dialogueStep",
 														"value": "1"
 													}
 												},
 												{
-													"id": "play",
-													"objectClass": "Audio",
-													"sid": 518813422911052,
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 452076928257968,
 													"parameters": {
-														"audio-file": "duck-quack",
-														"loop": "not-looping",
-														"volume": "0",
-														"stereo-pan": "0",
-														"tag-optional": "\"\""
+														"variable": "isDialogueFinished",
+														"value": "false"
 													}
 												}
 											],
@@ -336,9 +339,9 @@
 						{
 							"id": "set-width",
 							"objectClass": "dialog_box",
-							"sid": 988277553450086,
+							"sid": 743175797093555,
 							"parameters": {
-								"width": "lerp(self.Width, 450, dt * 12)"
+								"width": "lerp(self.Width, 346.351223, dt * 12)"
 							}
 						},
 						{
@@ -370,12 +373,12 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 554567348799865,
+									"sid": 811170540799648,
 									"parameters": {
 										"object-to-create": "mood_char",
 										"layer": "\"Hud\"",
-										"x": "88.521341",
-										"y": "115.726033",
+										"x": "63.672156",
+										"y": "180.504413",
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
@@ -383,11 +386,11 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 150243541680107,
+									"sid": 597456222476255,
 									"parameters": {
 										"object-to-create": "dialog_box",
 										"layer": "\"HUD\"",
-										"x": "240",
+										"x": "291.824389",
 										"y": "223.990089",
 										"create-hierarchy": false,
 										"template-name": "\"\""
@@ -396,20 +399,20 @@
 								{
 									"id": "set-size",
 									"objectClass": "mood_char",
-									"sid": 489824829914025,
+									"sid": 744060854721807,
 									"parameters": {
-										"width": "109.674518",
-										"height": "146.232691"
+										"width": "133.9347",
+										"height": "178.5796"
 									}
 								},
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 529174095365097,
+									"sid": 100310361380297,
 									"parameters": {
 										"object-to-create": "dialog_text",
 										"layer": "\"HUD\"",
-										"x": "23.878",
+										"x": "128.172397",
 										"y": "194.983957",
 										"create-hierarchy": false,
 										"template-name": "\"\""
@@ -523,6 +526,20 @@
 							],
 							"actions": [
 								{
+									"id": "set-boolean-instvar",
+									"objectClass": "dialog_text",
+									"sid": 988225970440625,
+									"parameters": {
+										"instance-variable": "ResetDialogue",
+										"value": "true"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "mood_char",
+									"sid": 191108716066394
+								},
+								{
 									"id": "destroy",
 									"objectClass": "dialog_text",
 									"sid": 114708941021511
@@ -547,6 +564,60 @@
 				}
 			],
 			"sid": 719237626531226
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "ResetText",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 353010908117471,
+							"parameters": {
+								"variable": "ResetDialogue"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "dialog_text",
+							"sid": 917600653048205
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 536492515415276,
+							"parameters": {
+								"object-to-create": "dialog_text",
+								"layer": "\"HUD\"",
+								"x": "128.172397",
+								"y": "194.983957",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 657079890443684,
+							"parameters": {
+								"variable": "ResetDialogue",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 277403473468481,
+					"disabled": true
+				}
+			],
+			"sid": 838357838408673
 		}
 	],
 	"sid": 936906408186371

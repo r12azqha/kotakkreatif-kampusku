@@ -5,14 +5,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-button-released",
-					"objectClass": "Mouse",
-					"sid": 494981212253701,
-					"parameters": {
-						"mouse-button": "left"
-					}
-				},
-				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
 					"sid": 284317674215372,
@@ -21,16 +13,16 @@
 					}
 				},
 				{
-					"id": "is-in-touch",
+					"id": "on-any-touch-end",
 					"objectClass": "Touch",
-					"sid": 696074271558640
+					"sid": 146381788214976
 				}
 			],
 			"actions": [
 				{
 					"id": "simulate-down-trigger",
 					"objectClass": "InputManager",
-					"sid": 158083560367329,
+					"sid": 631108004414605,
 					"parameters": {
 						"input": "\"advance\""
 					}

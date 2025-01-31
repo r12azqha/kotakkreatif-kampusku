@@ -16,6 +16,8 @@
 						"live-preview": false
 					},
 					"uid": 8,
+					"sid": 284473956183926,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -45,6 +47,8 @@
 						"live-preview": false
 					},
 					"uid": 10,
+					"sid": 980714156329893,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -95,6 +99,10 @@
 			"global": false
 		}
 	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
 	"sid": 260452076306874,
 	"nonworld-instances": [],
 	"effectTypes": [],

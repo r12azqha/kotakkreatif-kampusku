@@ -2,8 +2,326 @@
 	"name": "eGedung1_Lobby",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Quest2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 676826766382779
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "MAIN"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 332716181329337,
+					"parameters": {
+						"variable": "Quest2"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 317602765289234,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 723070460334010
+						}
+					],
+					"actions": [],
+					"sid": 391015347510901,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 858299666665450,
+									"parameters": {
+										"variable": "dialogueStep",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 513497997441750,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 908264334616334
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 147907120029072,
+											"parameters": {
+												"seconds": "0.3"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 313652406079906,
+											"parameters": {
+												"variable": "IsDialogBoxOpen",
+												"value": "true"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 795581251604546,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "mood_char",
+											"sid": 719736294483274,
+											"parameters": {
+												"animation": "\"Bella\"",
+												"from": "current-frame"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "mood_char",
+											"sid": 440870525297550,
+											"parameters": {
+												"frame-number": "2"
+											}
+										},
+										{
+											"id": "typewriter-text",
+											"objectClass": "dialog_text",
+											"sid": 487860728192531,
+											"parameters": {
+												"text": "\"Hmmm... tempat registrasinya dimana yaa, aduhh seharusnya aku ajak linda nih...\"",
+												"duration": "3"
+											}
+										}
+									],
+									"sid": 959800612965959
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "ondown1",
+							"objectClass": "InputManager",
+							"sid": 562784242327742,
+							"parameters": {
+								"input0": "\"advance\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 222556861995232,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 687633150206112,
+									"parameters": {
+										"variable": "dialogueStep",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 558047610765574,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 651662938205585
+										}
+									],
+									"actions": [
+										{
+											"id": "typewriter-text",
+											"objectClass": "dialog_text",
+											"sid": 702964434772706,
+											"parameters": {
+												"text": "\"Mungkin ruangan yang di sebelah kiri kali ya...\"",
+												"duration": "1"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "dialog_text",
+											"sid": 346337487929412,
+											"parameters": {
+												"instance-variable": "ResetDialogue",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "mood_char",
+											"sid": 160692826763692,
+											"parameters": {
+												"frame-number": "0"
+											}
+										}
+									],
+									"sid": 193912124697836
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 716665026087281,
+									"parameters": {
+										"variable": "dialogueStep",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 822875523705644,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 443221346664784
+										}
+									],
+									"actions": [
+										{
+											"id": "typewriter-text",
+											"objectClass": "dialog_text",
+											"sid": 160937038993854,
+											"parameters": {
+												"text": "\"Objective: Masuk Ruang Pendaftaran di sebelah kiri\"",
+												"duration": "1"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "dialog_text",
+											"sid": 989135629150505,
+											"parameters": {
+												"instance-variable": "ResetDialogue",
+												"value": "true"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "mood_char",
+											"sid": 725790871430318,
+											"parameters": {
+												"animation": "\"Standby\"",
+												"from": "current-frame"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "mood_char",
+											"sid": 799177940539946,
+											"parameters": {
+												"frame-number": "0"
+											}
+										}
+									],
+									"sid": 502699905922853
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 944215017691573,
+									"parameters": {
+										"variable": "dialogueStep",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 447639084544073,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 190579283433781
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 730509124408144,
+											"parameters": {
+												"variable": "IsDialogBoxOpen",
+												"value": "false"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 288185372874147,
+											"parameters": {
+												"variable": "Quest2",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 200547705144096
+								}
+							]
+						}
+					],
+					"isOrBlock": true
+				}
+			]
 		}
 	],
 	"sid": 289151375297681

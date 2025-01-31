@@ -464,9 +464,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 647308332899994,
+									"sid": 200736786465244,
 									"parameters": {
-										"seconds": "1"
+										"seconds": "1.3"
 									}
 								},
 								{
@@ -535,9 +535,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 770102953827097,
+									"sid": 283125969001795,
 									"parameters": {
-										"seconds": "1"
+										"seconds": "1.3"
 									}
 								},
 								{
@@ -552,10 +552,10 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "Spr_Player_MCBella",
-									"sid": 964095159695516,
+									"sid": 509808897421644,
 									"parameters": {
 										"instance-variable": "CurrentAnimation",
-										"value": "\"LeftIdle\""
+										"value": "\"UpIdle\""
 									}
 								},
 								{
@@ -606,9 +606,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 332380195352125,
+									"sid": 224594316099097,
 									"parameters": {
-										"seconds": "1"
+										"seconds": "1.3"
 									}
 								},
 								{
@@ -668,9 +668,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 942127467048307,
+									"sid": 540632453852699,
 									"parameters": {
-										"seconds": "1"
+										"seconds": "1.3"
 									}
 								},
 								{
@@ -692,68 +692,6 @@
 								}
 							],
 							"sid": 862092770296183
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Spr_Player_MCBella",
-							"sid": 368639873469004,
-							"parameters": {
-								"object": "ctp_Gedung1_KeMakopalaAndus"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 645474124133095,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 725799088998372
-								}
-							],
-							"actions": [
-								{
-									"callFunction": "Transition",
-									"sid": 921078821022986,
-									"parameters": [
-										"\"In\""
-									]
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 537207442567129,
-									"parameters": {
-										"seconds": "1"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 974974002155976,
-									"parameters": {
-										"variable": "tpke",
-										"value": "\"tp_Gedung1_MakopalaAndus\""
-									}
-								},
-								{
-									"id": "go-to-layout",
-									"objectClass": "System",
-									"sid": 926824622234577,
-									"parameters": {
-										"layout": "Gedung1_Makopala"
-									}
-								}
-							],
-							"sid": 310305671527169
 						}
 					]
 				},
@@ -916,9 +854,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 910714031345015,
+									"sid": 907036976308741,
 									"parameters": {
-										"seconds": "1"
+										"seconds": "1.3"
 									}
 								},
 								{
@@ -978,9 +916,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 414560720196651,
+									"sid": 609790488184232,
 									"parameters": {
-										"seconds": "1"
+										"seconds": "1.3"
 									}
 								},
 								{

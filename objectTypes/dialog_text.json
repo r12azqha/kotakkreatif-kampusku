@@ -3,7 +3,15 @@
 	"plugin-id": "Text",
 	"sid": 497425238816660,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "ResetDialogue",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 516842582924753
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": []
 }

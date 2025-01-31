@@ -5,6 +5,8 @@
 	"singleglobal-inst": {
 		"type": "3DCamera",
 		"properties": {},
-		"uid": 295
+		"uid": 295,
+		"sid": 518605205718327,
+		"tags": ""
 	}
 }

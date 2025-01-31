@@ -16,6 +16,8 @@
 						"live-preview": false
 					},
 					"uid": 78,
+					"sid": 730420400009223,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -80,6 +82,8 @@
 						"live-preview": false
 					},
 					"uid": 187,
+					"sid": 988227463115530,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -234,6 +238,8 @@
 						"live-preview": false
 					},
 					"uid": 234,
+					"sid": 503442276170753,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -515,6 +521,8 @@
 						"live-preview": false
 					},
 					"uid": 233,
+					"sid": 334699330389228,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -954,6 +962,8 @@
 						"live-preview": false
 					},
 					"uid": 188,
+					"sid": 370099139594532,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1018,6 +1028,8 @@
 						"live-preview": false
 					},
 					"uid": 238,
+					"sid": 228231051043169,
+					"tags": "",
 					"instanceVariables": {
 						"IsActive": false
 					},
@@ -1049,6 +1061,8 @@
 						"live-preview": false
 					},
 					"uid": 288,
+					"sid": 516668516125406,
+					"tags": "",
 					"instanceVariables": {
 						"CurrentAnimation": "",
 						"IsMoving": false
@@ -1146,6 +1160,10 @@
 			"global": false
 		}
 	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
 	"sid": 230061697802980,
 	"nonworld-instances": [],
 	"effectTypes": [],

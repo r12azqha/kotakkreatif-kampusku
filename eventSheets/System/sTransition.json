@@ -13,7 +13,7 @@
 			"actions": [
 				{
 					"callFunction": "Transition",
-					"sid": 652182221245188,
+					"sid": 262783374598213,
 					"parameters": [
 						"\"Out\""
 					]
@@ -163,6 +163,135 @@
 		{
 			"eventType": "group",
 			"disabled": false,
+			"title": "State \"InLong\"",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Transition",
+							"sid": 888362625237805,
+							"parameters": {
+								"instance-variable": "State",
+								"comparison": 0,
+								"value": "\"InLong\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 384853142294889,
+							"behaviorType": "8Direction"
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Transition",
+							"sid": 775268361489886,
+							"parameters": {
+								"opacity": "lerp(Self.Opacity, 100, 2* dt)"
+							}
+						},
+						{
+							"id": "stop-animation",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 945687768286005
+						}
+					],
+					"sid": 938422175420890,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 529554909702114
+								}
+							],
+							"actions": [
+								{
+									"id": "set-opacity",
+									"objectClass": "Transition",
+									"sid": 300025892821611,
+									"parameters": {
+										"opacity": "50"
+									}
+								}
+							],
+							"sid": 142282247585371
+						}
+					]
+				}
+			],
+			"sid": 591730774759397
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "State \"OutLong\"",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Transition",
+							"sid": 599173942683578,
+							"parameters": {
+								"instance-variable": "State",
+								"comparison": 0,
+								"value": "\"OutLong\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Transition",
+							"sid": 841679318005463,
+							"parameters": {
+								"opacity": "lerp(Self.Opacity, 0, 2* dt)"
+							}
+						}
+					],
+					"sid": 108595419111511,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 352847652356664
+								}
+							],
+							"actions": [
+								{
+									"id": "set-opacity",
+									"objectClass": "Transition",
+									"sid": 961810013970997,
+									"parameters": {
+										"opacity": "100"
+									}
+								}
+							],
+							"sid": 517494287554414
+						}
+					]
+				}
+			],
+			"sid": 231135782347961
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
 			"title": "State \"Out\"",
 			"description": "",
 			"isActiveOnStart": true,
@@ -220,50 +349,54 @@
 			"sid": 686145625029570
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "State \"Black\"",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 649726303257733,
-					"parameters": {
-						"key": 70
-					}
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "Transition",
-					"sid": 111156463966110,
-					"parameters": [
-						"\"In\""
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Transition",
+							"sid": 406986080109440,
+							"parameters": {
+								"instance-variable": "State",
+								"comparison": 0,
+								"value": "\"Out\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 875082134448333,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 898996297410454
+								}
+							],
+							"actions": [
+								{
+									"id": "set-opacity",
+									"objectClass": "Transition",
+									"sid": 384289643802907,
+									"parameters": {
+										"opacity": "100"
+									}
+								}
+							],
+							"sid": 924780808486415
+						}
 					]
 				}
 			],
-			"sid": 465032564759868
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 217584410061327,
-					"parameters": {
-						"key": 71
-					}
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "Transition",
-					"sid": 591165615242492,
-					"parameters": [
-						"\"Out\""
-					]
-				}
-			],
-			"sid": 241085515146523
+			"sid": 889970171403165
 		}
 	],
 	"sid": 560199191420068

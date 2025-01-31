@@ -4,6 +4,2062 @@
 		{
 			"eventType": "include",
 			"includeSheet": "MAIN"
+		},
+		{
+			"eventType": "variable",
+			"name": "Quest3",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 319725379456379
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Spr_Player_MCBella",
+					"sid": 402569989965483,
+					"parameters": {
+						"object": "Pendaftaran"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 369998972340067,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 753381293821851,
+							"parameters": {
+								"variable": "Quest3"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Spr_Player_MCBella",
+							"sid": 514893990500486,
+							"parameters": {
+								"instance-variable": "CurrentAnimation",
+								"value": "\"UpIdle\""
+							}
+						}
+					],
+					"sid": 776675694580342,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 626343156537769
+								}
+							],
+							"actions": [],
+							"sid": 664264121317023,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 459998233271165,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 563759919936359,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 390528365045233
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 971377876186863,
+													"parameters": {
+														"seconds": "0.3"
+													}
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 807950870277698,
+													"parameters": {
+														"variable": "IsDialogBoxOpen",
+														"value": "true"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 884611378129169,
+													"parameters": {
+														"seconds": "0.1"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 186149308446067,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 210638920795546,
+													"parameters": {
+														"frame-number": "2"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 553297448834806,
+													"parameters": {
+														"text": "\"Selamat Siang kakak\"",
+														"duration": "0.5"
+													}
+												}
+											],
+											"sid": 994711838248279
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "ondown1",
+									"objectClass": "InputManager",
+									"sid": 701968917488771,
+									"parameters": {
+										"input0": "\"advance\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 886166116661339,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 445723923599350,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 928452665211726,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 351957875551332
+												}
+											],
+											"actions": [
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 956451830817883,
+													"parameters": {
+														"text": "\"Selamat datang di ruangan registrasi kampus Universitas Budi Luhur\"",
+														"duration": "1"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 265056980806988,
+													"parameters": {
+														"frame-number": "0"
+													}
+												}
+											],
+											"sid": 505869849557848
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 816028801141537,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 106189886986167,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 701331805398348
+												}
+											],
+											"actions": [
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 163409154961122,
+													"parameters": {
+														"text": "\"Ada yang bisa saya bantu?\"",
+														"duration": "1"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 187694571329997,
+													"parameters": {
+														"frame-number": "0"
+													}
+												}
+											],
+											"sid": 747574139847670
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 952520092313124,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 490611033674224,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 181099621078256
+												}
+											],
+											"actions": [
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 803222805459066,
+													"parameters": {
+														"text": "\"Anuuu... kak, Nama saya Isabella Ratna Putri Kusuma\"",
+														"duration": "1"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 275356598904090,
+													"parameters": {
+														"animation": "\"Bella\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 688958270431734,
+													"parameters": {
+														"frame-number": "0"
+													}
+												}
+											],
+											"sid": 346491803201955
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 193242137231883,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "4"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 240120097020053,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 997689106652431
+												}
+											],
+											"actions": [
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 449596457371977,
+													"parameters": {
+														"text": "\"Saya disini ingin mendaftar di kampus ini..\"",
+														"duration": "1"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 667703741956222,
+													"parameters": {
+														"animation": "\"Bella\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 946368070807242,
+													"parameters": {
+														"frame-number": "0"
+													}
+												}
+											],
+											"sid": 651734673970312
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 311984434170435,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "5"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 979894829229425,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 910008302129902
+												}
+											],
+											"actions": [
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 218355596825286,
+													"parameters": {
+														"text": "\"Bisa tolong arahin ngga kakk..?\"",
+														"duration": "1"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 632987253125639,
+													"parameters": {
+														"animation": "\"Bella\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 593182383026848,
+													"parameters": {
+														"frame-number": "2"
+													}
+												}
+											],
+											"sid": 441623812190374
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 380859727859813,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "6"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 231008624610812,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 325277936472866
+												}
+											],
+											"actions": [
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 366895453780562,
+													"parameters": {
+														"text": "\"Boleh kakk memang disini tempat registrasinya\"",
+														"duration": "1"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 689352214108690,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 872108692704334,
+													"parameters": {
+														"frame-number": "2"
+													}
+												}
+											],
+											"sid": 627839244848814
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 156444695495577,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "7"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 518796451741511,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 517772252184023
+												}
+											],
+											"actions": [
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 945981164028167,
+													"parameters": {
+														"text": "\"Silahkan kakak mengisi formulirnya\"",
+														"duration": "1"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 686079194800287,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 337076638541622,
+													"parameters": {
+														"frame-number": "2"
+													}
+												}
+											],
+											"sid": 223580290612600
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 423996922230978,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "8"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 552911422632841,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 410409083939659
+												}
+											],
+											"actions": [
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 248398721578126,
+													"parameters": {
+														"text": "\"Oke kakk..\"",
+														"duration": "0.3"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 390322222672820,
+													"parameters": {
+														"animation": "\"Bella\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 760945480781029,
+													"parameters": {
+														"frame-number": "0"
+													}
+												}
+											],
+											"sid": 268079900268604
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 823248174523323,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "9"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 403883595539806,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 666833223373081
+												}
+											],
+											"actions": [
+												{
+													"callFunction": "Transition",
+													"sid": 183668323742314,
+													"parameters": [
+														"\"InLong\""
+													]
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 987525613734792,
+													"parameters": {
+														"seconds": "1.0"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 300924578413088,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 714067539413482,
+													"parameters": {
+														"object-to-create": "dialog_text_cinema",
+														"layer": "\"Transition\"",
+														"x": "0.789341",
+														"y": "0.765759",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 124813964455194,
+													"parameters": {
+														"text": "\"   \"",
+														"duration": "0.5"
+													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "dialog_text_cinema",
+													"sid": 965859416317039,
+													"parameters": {
+														"text": "\"Setelah beberapa saat kemudian..\""
+													}
+												}
+											],
+											"sid": 847849344664678
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 925849892417222,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "10"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 995782051122849,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 463381384550610
+												}
+											],
+											"actions": [
+												{
+													"id": "destroy",
+													"objectClass": "dialog_text_cinema",
+													"sid": 114111546731657
+												},
+												{
+													"callFunction": "Transition",
+													"sid": 107771724159186,
+													"parameters": [
+														"\"OutLong\""
+													]
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 401670984139384,
+													"parameters": {
+														"seconds": "1.0"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 334789971019338,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 656614237971928,
+													"parameters": {
+														"frame-number": "2"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 801380395069369,
+													"parameters": {
+														"text": "\"Oke terima kasih kak\"",
+														"duration": "0.5"
+													}
+												}
+											],
+											"sid": 256894433818879
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 217579428141598,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "11"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 197902624571508,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 588565271080804
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 154155439308395,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 663228142447824,
+													"parameters": {
+														"frame-number": "2"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 923192231067336,
+													"parameters": {
+														"text": "\"Sudah selesai registrasinya..\"",
+														"duration": "0.5"
+													}
+												}
+											],
+											"sid": 343448069045228
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 997218750980682,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "12"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 336860733800064,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 262065142846870
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 655152786484170,
+													"parameters": {
+														"seconds": "0.1"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 812486507298067,
+													"parameters": {
+														"animation": "\"Bella\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 247068640232698,
+													"parameters": {
+														"frame-number": "0"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 228614728914650,
+													"parameters": {
+														"text": "\"(dalam hati: Walaehh gampang bingits registrasinya..)\"",
+														"duration": "0.3"
+													}
+												}
+											],
+											"sid": 569061052545669
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 461526865486309,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "13"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 732500532832955,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 772907796490170
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 273914104453795,
+													"parameters": {
+														"animation": "\"Bella\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 457782410080195,
+													"parameters": {
+														"frame-number": "2"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 879683183682234,
+													"parameters": {
+														"text": "\"(dalam hati: Aku pikir bakalan lama dan ribet pendaftarannya)\"",
+														"duration": "0.3"
+													}
+												}
+											],
+											"sid": 321292012026041
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 819795821405811,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "14"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 616284075619836,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 380521855046414
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 482705041973209,
+													"parameters": {
+														"animation": "\"Bella\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 813005845708563,
+													"parameters": {
+														"frame-number": "0"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 640076492169902,
+													"parameters": {
+														"text": "\"Wahh begini saja kak?\"",
+														"duration": "0.3"
+													}
+												}
+											],
+											"sid": 950352162108474
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 173434216835750,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "15"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 210263335785376,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 784251144781500
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 336608555628911,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 575155145645862,
+													"parameters": {
+														"frame-number": "0"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 491142578209508,
+													"parameters": {
+														"text": "\"Iya kak sudah selesai registrasinya\"",
+														"duration": "0.3"
+													}
+												}
+											],
+											"sid": 876085291184304
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 586417080330432,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "16"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 850045728043946,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 156236455996134
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 700222176447451,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 229446900341518,
+													"parameters": {
+														"frame-number": "0"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 948964119748836,
+													"parameters": {
+														"text": "\"Kakak bella, maukah kakak di dampingi petugas kah untuk keliling kampus\"",
+														"duration": "0.3"
+													}
+												}
+											],
+											"sid": 322671258702721
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 692782634189672,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "17"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 495793916410636,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 418750037124660
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 740452491556404,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 907998810000556,
+													"parameters": {
+														"frame-number": "0"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 586016643775508,
+													"parameters": {
+														"text": "\"Untuk memperkenalkan lingkungan kampus Universitas Budi Luhur?\"",
+														"duration": "0.3"
+													}
+												}
+											],
+											"sid": 178416401831164
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 464274287744687,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "18"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 586112575191599,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 607538728894109
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 649068608551216,
+													"parameters": {
+														"animation": "\"Bella\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 248347676453564,
+													"parameters": {
+														"frame-number": "0"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 935089324307020,
+													"parameters": {
+														"text": "\"Ohh boleh banget tuhh\"",
+														"duration": "0.3"
+													}
+												}
+											],
+											"sid": 666479068375823
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 866072528112151,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "19"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 131814714757181,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 146685618518399
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 618786729026337,
+													"parameters": {
+														"animation": "\"Bella\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 687746000507747,
+													"parameters": {
+														"frame-number": "2"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 783504519156308,
+													"parameters": {
+														"text": "\"Biar nanti saya nyasar sampai ke cikarang\"",
+														"duration": "0.3"
+													}
+												}
+											],
+											"sid": 371523290037456
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 290335824235471,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "19"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 122486194309474,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 740013235560934
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 500550358057788,
+													"parameters": {
+														"animation": "\"Bella\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 950847052445989,
+													"parameters": {
+														"frame-number": "2"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 613951655602255,
+													"parameters": {
+														"text": "\"Biar nanti saya ngga nyasar sampai ke cikarang\"",
+														"duration": "0.3"
+													}
+												}
+											],
+											"sid": 293617407620421
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 871342445204269,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "20"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 824132207845292,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 590590913430727
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 107599698059658,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 725232761305484,
+													"parameters": {
+														"frame-number": "2"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 529733995767337,
+													"parameters": {
+														"text": "\"Oke baiklah kakk\"",
+														"duration": "0.3"
+													}
+												}
+											],
+											"sid": 131864717314973
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 470083919045816,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "21"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 106346633079296,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 917938350030000
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 503779409283296,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 295798317450057,
+													"parameters": {
+														"frame-number": "2"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 102192027094991,
+													"parameters": {
+														"text": "\"nanti saya akan panggilkan petugas untuk mendampingi kakak\"",
+														"duration": "0.3"
+													}
+												}
+											],
+											"sid": 433437233685350
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 152495226179322,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "22"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 497624389725453,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 142849417039196
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 577782303778138,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 770243050974970,
+													"parameters": {
+														"frame-number": "2"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 720950308317609,
+													"parameters": {
+														"text": "\"Namanya mas Dimas\"",
+														"duration": "0.3"
+													}
+												}
+											],
+											"sid": 488127864545416
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 367131229987224,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "23"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 971319949111049,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 752702272460813
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 286689081541691,
+													"parameters": {
+														"animation": "\"Bella\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 279310908632114,
+													"parameters": {
+														"frame-number": "0"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 704504312232490,
+													"parameters": {
+														"text": "\"Oke kak makasih atas bantuannya\"",
+														"duration": "0.3"
+													}
+												}
+											],
+											"sid": 996372375722404
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 841178833838598,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "24"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 423329247574814,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 326941259971543
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 215486196759220,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 440388524770844,
+													"parameters": {
+														"frame-number": "2"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 242321454440176,
+													"parameters": {
+														"text": "\"Oke kak kalau begitu, kakak bisa tunggu di depan ruang registrasi\"",
+														"duration": "0.3"
+													}
+												}
+											],
+											"sid": 514821054331935
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 386226077906719,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "25"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 753587757526875,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 209771255992153
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 367217508351334,
+													"parameters": {
+														"animation": "\"Bella\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 940369712878021,
+													"parameters": {
+														"frame-number": "0"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 549217994959218,
+													"parameters": {
+														"text": "\"Okie Dokie 😁👍\"",
+														"duration": "0.3"
+													}
+												}
+											],
+											"sid": 185012837111139
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 366799854399523,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "26"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 801960665892486,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 536253603120462
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 324793351998002,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 830999139743599,
+													"parameters": {
+														"frame-number": "0"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 873661043954689,
+													"parameters": {
+														"text": "\"Objective: Keluar dari ruangan Pendaftaran\"",
+														"duration": "1"
+													}
+												}
+											],
+											"sid": 697586827020626
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 548980718293753,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "27"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 365351871956065,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 123392269497795
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 907206328910680,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 300070930879804,
+													"parameters": {
+														"frame-number": "0"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 877125695385029,
+													"parameters": {
+														"text": "\"Demo gamenya sampai sini dulu ya :(\"",
+														"duration": "1"
+													}
+												}
+											],
+											"sid": 373713005059260
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 632189906402456,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "28"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 574500750889626,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 244290979121013
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 939956873666584,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 931146694840687,
+													"parameters": {
+														"frame-number": "0"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 908977309987139,
+													"parameters": {
+														"text": "\"Ohh iya kalau kalian mau ikut berpatisisapi dalam game ini-\"",
+														"duration": "1"
+													}
+												}
+											],
+											"sid": 427454789991604
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 690636219056919,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "29"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 981305542927623,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 158010980244355
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 892053612076615,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 912028799729997,
+													"parameters": {
+														"frame-number": "0"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 271443273654606,
+													"parameters": {
+														"text": "\"Silahkan join Komunikas Kotak kreatif yakkk~ :3\"",
+														"duration": "1"
+													}
+												}
+											],
+											"sid": 859571203514904
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 556084519449983,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "30"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 491755384682566,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 794779114115843
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "mood_char",
+													"sid": 955669834720603,
+													"parameters": {
+														"animation": "\"Standby\"",
+														"from": "current-frame"
+													}
+												},
+												{
+													"id": "set-animation-frame",
+													"objectClass": "mood_char",
+													"sid": 702164029657974,
+													"parameters": {
+														"frame-number": "0"
+													}
+												},
+												{
+													"id": "typewriter-text",
+													"objectClass": "dialog_text",
+													"sid": 823344706360380,
+													"parameters": {
+														"text": "\"Silahkan Freeroam gamenya yaa~\"",
+														"duration": "1"
+													}
+												}
+											],
+											"sid": 824349525657781
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 766102133200986,
+											"parameters": {
+												"variable": "dialogueStep",
+												"comparison": 0,
+												"value": "31"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 961741434111175,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 728143787565650
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 227231757873651,
+													"parameters": {
+														"variable": "IsDialogBoxOpen",
+														"value": "false"
+													}
+												},
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 233835730095273,
+													"parameters": {
+														"variable": "Quest3",
+														"value": "true"
+													}
+												}
+											],
+											"sid": 616607854917206
+										}
+									]
+								}
+							],
+							"isOrBlock": true
+						}
+					]
+				}
+			]
 		}
 	],
 	"sid": 946315869453770

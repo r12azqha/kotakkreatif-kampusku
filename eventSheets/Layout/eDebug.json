@@ -11,7 +11,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 646009790658899,
+					"sid": 306979547654366,
 					"parameters": {
 						"key": 96
 					}
@@ -19,15 +19,21 @@
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
+					"id": "restart-layout",
 					"objectClass": "System",
-					"sid": 184405866494660,
+					"sid": 496793409185252
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 261201025505202,
 					"parameters": {
-						"layout": "Debug"
+						"variable": "FirstLoad",
+						"value": "true"
 					}
 				}
 			],
-			"sid": 465978235252122
+			"sid": 199001168253852
 		},
 		{
 			"eventType": "block",
@@ -35,23 +41,23 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 141878505815303,
+					"sid": 649726303257733,
 					"parameters": {
-						"key": 97
+						"key": 70
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 928000947976219,
-					"parameters": {
-						"layout": "RumahMC"
-					}
+					"callFunction": "Transition",
+					"sid": 111156463966110,
+					"parameters": [
+						"\"In\""
+					]
 				}
 			],
-			"sid": 831578057316093
+			"sid": 465032564759868,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -59,143 +65,23 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 517894365074440,
+					"sid": 217584410061327,
 					"parameters": {
-						"key": 98
+						"key": 71
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 351089069323783,
-					"parameters": {
-						"layout": "Gedung1_Depan"
-					}
+					"callFunction": "Transition",
+					"sid": 591165615242492,
+					"parameters": [
+						"\"Out\""
+					]
 				}
 			],
-			"sid": 852003599316705
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 756236259749356,
-					"parameters": {
-						"key": 99
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 218510614306157,
-					"parameters": {
-						"layout": "Gedung1_Lobby"
-					}
-				}
-			],
-			"sid": 344043757633328
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 853689681092199,
-					"parameters": {
-						"key": 100
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 533212760987315,
-					"parameters": {
-						"layout": "Gedung1_Pendaftaran"
-					}
-				}
-			],
-			"sid": 704619412772881
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 452003065671336,
-					"parameters": {
-						"key": 101
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 876723762368629,
-					"parameters": {
-						"layout": "Gedung1_Keuangan"
-					}
-				}
-			],
-			"sid": 238803046574636
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 471150779443547,
-					"parameters": {
-						"key": 102
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 775253049699155,
-					"parameters": {
-						"layout": "Gedung1_Makopala"
-					}
-				}
-			],
-			"sid": 363731751771563
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 878677067525312,
-					"parameters": {
-						"key": 103
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 407953731518378,
-					"parameters": {
-						"layout": "Lapangan"
-					}
-				}
-			],
-			"sid": 403303163569980
+			"sid": 241085515146523,
+			"disabled": true
 		}
 	],
 	"sid": 441773975560717

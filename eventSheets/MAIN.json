@@ -101,38 +101,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-suspend",
-					"objectClass": "System",
-					"sid": 557322733659007
-				}
-			],
-			"actions": [
-				{
-					"callFunction": "Transition",
-					"sid": 580568198434146,
-					"parameters": [
-						"\"Out\""
-					]
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 485812387420421,
-					"parameters": {
-						"audio-file": "GETOUT",
-						"loop": "not-looping",
-						"volume": "-25",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				}
-			],
-			"sid": 851573647876552
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
 					"sid": 308714921619430,

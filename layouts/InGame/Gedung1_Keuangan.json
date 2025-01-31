@@ -16,6 +16,8 @@
 						"live-preview": false
 					},
 					"uid": 70,
+					"sid": 246178149396022,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -45,6 +47,8 @@
 						"live-preview": false
 					},
 					"uid": 71,
+					"sid": 357033385524965,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -74,6 +78,8 @@
 						"live-preview": false
 					},
 					"uid": 73,
+					"sid": 302057932353316,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -103,6 +109,8 @@
 						"live-preview": false
 					},
 					"uid": 74,
+					"sid": 800038317304685,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -132,6 +140,8 @@
 						"live-preview": false
 					},
 					"uid": 75,
+					"sid": 911021981959432,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -161,6 +171,8 @@
 						"live-preview": false
 					},
 					"uid": 69,
+					"sid": 318104494052707,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -225,6 +237,8 @@
 						"live-preview": false
 					},
 					"uid": 244,
+					"sid": 637767398296321,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -276,6 +290,8 @@
 						"live-preview": false
 					},
 					"uid": 245,
+					"sid": 649241640242125,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -327,6 +343,8 @@
 						"live-preview": false
 					},
 					"uid": 77,
+					"sid": 419610553245810,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -391,6 +409,8 @@
 						"live-preview": false
 					},
 					"uid": 291,
+					"sid": 327128498456909,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -420,6 +440,8 @@
 						"live-preview": false
 					},
 					"uid": 94,
+					"sid": 997857737753380,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -449,6 +471,8 @@
 						"live-preview": false
 					},
 					"uid": 92,
+					"sid": 727420783153831,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -547,6 +571,8 @@
 						"live-preview": false
 					},
 					"uid": 14,
+					"sid": 280174093429229,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -583,6 +609,8 @@
 						"live-preview": false
 					},
 					"uid": 19,
+					"sid": 693731315224524,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -619,6 +647,8 @@
 						"live-preview": false
 					},
 					"uid": 20,
+					"sid": 205960569191020,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -655,6 +685,8 @@
 						"live-preview": false
 					},
 					"uid": 21,
+					"sid": 634630983757542,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -691,6 +723,8 @@
 						"live-preview": false
 					},
 					"uid": 26,
+					"sid": 263910362671377,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -727,6 +761,8 @@
 						"live-preview": false
 					},
 					"uid": 29,
+					"sid": 431652884871249,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -763,6 +799,8 @@
 						"live-preview": false
 					},
 					"uid": 30,
+					"sid": 688826331441041,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -799,6 +837,8 @@
 						"live-preview": false
 					},
 					"uid": 34,
+					"sid": 341457363149566,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -835,6 +875,8 @@
 						"live-preview": false
 					},
 					"uid": 35,
+					"sid": 216106039059345,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -871,6 +913,8 @@
 						"live-preview": false
 					},
 					"uid": 36,
+					"sid": 780431592150637,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -962,6 +1006,10 @@
 			"global": false
 		}
 	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
 	"sid": 701184514694990,
 	"nonworld-instances": [],
 	"effectTypes": [],

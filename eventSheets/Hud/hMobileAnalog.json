@@ -2,6 +2,41 @@
 	"name": "hMobileAnalog",
 	"events": [
 		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Force Mobile Input (Require restart to reverse)",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 788630281941099,
+							"parameters": {
+								"key": 77
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 248183000728205,
+							"parameters": {
+								"variable": "deviceType",
+								"value": "\"Mobile\""
+							}
+						}
+					],
+					"sid": 849700977624793
+				}
+			],
+			"sid": 461375295904456
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

@@ -3,238 +3,228 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "browserInfo",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 408237071419461
-		},
-		{
-			"eventType": "variable",
-			"name": "currentTime",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 874118416547786
-		},
-		{
-			"eventType": "variable",
-			"name": "screenResolution",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 573042255015078
-		},
-		{
-			"eventType": "variable",
-			"name": "browserLanguage",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 434262612051467
-		},
-		{
-			"eventType": "variable",
-			"name": "deviceModel",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 466037136028619
-		},
-		{
-			"eventType": "variable",
-			"name": "networkType",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 750895124252617
-		},
-		{
-			"eventType": "variable",
-			"name": "location",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 904776065892976
-		},
-		{
-			"eventType": "variable",
-			"name": "storedData",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 344658306485498
-		},
-		{
-			"eventType": "variable",
-			"name": "osInfo",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 303842568792920
-		},
-		{
-			"eventType": "variable",
-			"name": "timezone",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 215869846657176
-		},
-		{
-			"eventType": "variable",
-			"name": "connectionSpeed",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 858007534488604
-		},
-		{
-			"eventType": "variable",
-			"name": "deviceMemory",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 615257443433759
-		},
-		{
-			"eventType": "variable",
-			"name": "batteryLevel",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 215522216426836
-		},
-		{
-			"eventType": "variable",
-			"name": "viewportSize",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 862226646710749
-		},
-		{
-			"eventType": "variable",
-			"name": "cpuCores",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 815281361363185
-		},
-		{
-			"eventType": "variable",
 			"name": "deviceType",
 			"type": "string",
 			"initialValue": "",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 767435588505193
+			"sid": 853815540560206
 		},
 		{
-			"eventType": "variable",
-			"name": "clientID",
-			"type": "string",
-			"initialValue": "",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 180678690937218
-		},
-		{
-			"eventType": "variable",
-			"name": "GameVersion",
-			"type": "string",
-			"initialValue": "Alpha 1.0.3.4",
-			"comment": "for ajax variable",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 778289090034146
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 115400527458445,
-					"parameters": {
-						"variable": "FirstLoad"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 866889997441631,
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group2",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "variable",
+					"name": "clientID",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 249480936907753
+				},
+				{
+					"eventType": "variable",
+					"name": "deviceModel",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 228461728356464
+				},
+				{
+					"eventType": "variable",
+					"name": "browserInfo",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 324434438947277
+				},
+				{
+					"eventType": "variable",
+					"name": "currentTime",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 338933281634881
+				},
+				{
+					"eventType": "variable",
+					"name": "screenResolution",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 988451293755724
+				},
+				{
+					"eventType": "variable",
+					"name": "browserLanguage",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 371002063604725
+				},
+				{
+					"eventType": "variable",
+					"name": "networkType",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 823927627560298
+				},
+				{
+					"eventType": "variable",
+					"name": "location",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 372547564833330
+				},
+				{
+					"eventType": "variable",
+					"name": "storedData",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 600160998204620
+				},
+				{
+					"eventType": "variable",
+					"name": "osInfo",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 906232557231177
+				},
+				{
+					"eventType": "variable",
+					"name": "timezone",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 907207639960838
+				},
+				{
+					"eventType": "variable",
+					"name": "connectionSpeed",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 131159116180978
+				},
+				{
+					"eventType": "variable",
+					"name": "deviceMemory",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 268125177006837
+				},
+				{
+					"eventType": "variable",
+					"name": "batteryLevel",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 250719914856532
+				},
+				{
+					"eventType": "variable",
+					"name": "viewportSize",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 812908524799891
+				},
+				{
+					"eventType": "variable",
+					"name": "cpuCores",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 661591823042384
+				},
+				{
+					"eventType": "variable",
+					"name": "GameVersion",
+					"type": "string",
+					"initialValue": "",
+					"comment": "for ajax variable",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 646340971091492
+				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "trigger-once-while-true",
+							"id": "compare-boolean-eventvar",
 							"objectClass": "System",
-							"sid": 860566615759205
-						}
-					],
-					"actions": [
-						{
-							"type": "script",
-							"script": "function getBrowserInfo() {\n    var userAgent = navigator.userAgent;\n    var browserName, browserVersion;\n\n    if (userAgent.indexOf(\"Chrome\") > -1) {\n        browserName = \"Chrome\";\n        browserVersion = userAgent.split(\"Chrome/\")[1].split(\" \")[0];\n    } else if (userAgent.indexOf(\"Firefox\") > -1) {\n        browserName = \"Firefox\";\n        browserVersion = userAgent.split(\"Firefox/\")[1];\n    } else if (userAgent.indexOf(\"Safari\") > -1) {\n        browserName = \"Safari\";\n        browserVersion = userAgent.split(\"Version/\")[1].split(\" \")[0];\n    } else {\n        browserName = \"Unknown\";\n        browserVersion = \"Unknown\";\n    }\n\n    return browserName + \" \" + browserVersion;\n}\n\nfunction getOSInfo() {\n    var userAgent = navigator.userAgent;\n    var osName = \"Unknown OS\";\n    var osVersion = \"Unknown Version\";\n\n    if (userAgent.indexOf(\"Windows NT 10.0\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"10\";\n    } else if (userAgent.indexOf(\"Windows NT 6.3\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"8.1\";\n    } else if (userAgent.indexOf(\"Windows NT 6.2\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"8\";\n    } else if (userAgent.indexOf(\"Windows NT 6.1\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"7\";\n    } else if (userAgent.indexOf(\"Windows NT 6.0\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"Vista\";\n    } else if (userAgent.indexOf(\"Windows NT 5.1\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"XP\";\n    } else if (userAgent.indexOf(\"Macintosh\") > -1) {\n        osName = \"Mac OS\";\n        osVersion = userAgent.split(\"Mac OS X \")[1] ? userAgent.split(\"Mac OS X \")[1].split(\")\")[0] : \"Unknown\";\n    } else if (userAgent.indexOf(\"Android\") > -1) {\n        osName = \"Android\";\n        osVersion = userAgent.split(\"Android \")[1].split(\" \")[0];\n    } else if (userAgent.indexOf(\"Linux\") > -1) {\n        osName = \"Linux\";\n    }\n\n    return osName + \" \" + osVersion;\n}\n\nfunction getDeviceType() {\n    return /Mobi|Android/i.test(navigator.userAgent) ? \"Mobile\" : \"Desktop\";\n}\n\nvar currentTime = new Date().toLocaleString();\nvar browserInfo = getBrowserInfo();\nvar osInfo = getOSInfo();\nvar screenResolution = screen.width + \"x\" + screen.height;\nvar browserLanguage = navigator.language || navigator.userLanguage;\nvar deviceModel = navigator.platform;\nvar networkType = (navigator.connection || {}).effectiveType || \"Unknown\";\nvar timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;\nvar connectionSpeed = (navigator.connection || {}).downlink || \"Unknown\";\nvar userAgentString = navigator.userAgent;\nvar cookiesEnabled = navigator.cookieEnabled ? \"Yes\" : \"No\";\nvar javascriptEnabled = \"Yes\";\nvar screenOrientation = screen.orientation ? screen.orientation.type : \"Unknown\";\nvar deviceMemory = (navigator.deviceMemory || \"Unknown\") + \" GB\";\nvar viewportSize = window.innerWidth + \"x\" + window.innerHeight;\nvar cpuCores = navigator.hardwareConcurrency || \"Unknown\";\nvar deviceType = getDeviceType();\n\nruntime.globalVars.currentTime = currentTime;\nruntime.globalVars.browserInfo = browserInfo;\nruntime.globalVars.osInfo = osInfo;\nruntime.globalVars.screenResolution = screenResolution;\nruntime.globalVars.browserLanguage = browserLanguage;\nruntime.globalVars.deviceModel = deviceModel;\nruntime.globalVars.networkType = networkType;\nruntime.globalVars.timezone = timezone;\nruntime.globalVars.connectionSpeed = connectionSpeed;\nruntime.globalVars.userAgentString = userAgentString;\nruntime.globalVars.cookiesEnabled = cookiesEnabled;\nruntime.globalVars.javascriptEnabled = javascriptEnabled;\nruntime.globalVars.screenOrientation = screenOrientation;\nruntime.globalVars.deviceMemory = deviceMemory;\nruntime.globalVars.viewportSize = viewportSize;\nruntime.globalVars.cpuCores = cpuCores;\nruntime.globalVars.deviceType = deviceType;\n\nvar gameVersion = runtime.projectVersion; // This will automatically take the project version\n\nvar storedData = localStorage.getItem(\"yourDataKey\") || \"No data\";\nruntime.globalVars.storedData = storedData;\n",
-							"disabled": true
-						},
-						{
-							"type": "script",
-							"script": "function getClientID() {\n    var clientID = localStorage.getItem(\"clientID\");\n\n    // If no ID exists, generate a new one and store it in localStorage\n    if (!clientID) {\n        clientID = Math.random().toString(36).substr(2, 9); // Generate a unique ID without prefix\n        localStorage.setItem(\"clientID\", clientID);\n    }\n\n    return clientID;\n}\nvar clientID = getClientID(); // Get or create the unique client ID\nruntime.globalVars.clientID = clientID; // Store the client ID in a global variable\n"
-						},
-						{
-							"type": "script",
-							"script": "function getBrowserInfo() {\n    var userAgent = navigator.userAgent;\n    var browserName, browserVersion;\n\n    if (userAgent.indexOf(\"Chrome\") > -1) {\n        browserName = \"Chrome\";\n        browserVersion = userAgent.split(\"Chrome/\")[1].split(\" \")[0];\n    } else if (userAgent.indexOf(\"Firefox\") > -1) {\n        browserName = \"Firefox\";\n        browserVersion = userAgent.split(\"Firefox/\")[1];\n    } else if (userAgent.indexOf(\"Safari\") > -1) {\n        browserName = \"Safari\";\n        browserVersion = userAgent.split(\"Version/\")[1].split(\" \")[0];\n    } else {\n        browserName = \"Unknown\";\n        browserVersion = \"Unknown\";\n    }\n\n    return browserName + \" \" + browserVersion;\n}\n\nfunction getOSInfo() {\n    var userAgent = navigator.userAgent;\n    var osName = \"Unknown OS\";\n    var osVersion = \"Unknown Version\";\n\n    if (userAgent.indexOf(\"Windows NT 10.0\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"10\";\n    } else if (userAgent.indexOf(\"Windows NT 6.3\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"8.1\";\n    } else if (userAgent.indexOf(\"Windows NT 6.2\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"8\";\n    } else if (userAgent.indexOf(\"Windows NT 6.1\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"7\";\n    } else if (userAgent.indexOf(\"Windows NT 6.0\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"Vista\";\n    } else if (userAgent.indexOf(\"Windows NT 5.1\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"XP\";\n    } else if (userAgent.indexOf(\"Macintosh\") > -1) {\n        osName = \"Mac OS\";\n        osVersion = userAgent.split(\"Mac OS X \")[1] ? userAgent.split(\"Mac OS X \")[1].split(\")\")[0] : \"Unknown\";\n    } else if (userAgent.indexOf(\"Android\") > -1) {\n        osName = \"Android\";\n        osVersion = userAgent.split(\"Android \")[1].split(\" \")[0];\n    } else if (userAgent.indexOf(\"Linux\") > -1) {\n        osName = \"Linux\";\n    }\n\n    return osName + \" \" + osVersion;\n}\n\nfunction getDeviceType() {\n    return /Mobi|Android/i.test(navigator.userAgent) ? \"Mobile\" : \"Desktop\";\n}\n\nfunction getClientID() {\n    var clientID = localStorage.getItem(\"clientID\");\n\n    // If no ID exists, generate a new one and store it in localStorage\n    if (!clientID) {\n        clientID = Math.random().toString(36).substr(2, 9); // Generate a unique ID without prefix\n        localStorage.setItem(\"clientID\", clientID);\n    }\n\n    return clientID;\n}\n\nfunction sendRequestWithDecodedURL(base64URL) {\n    // Decode Base64 string\n    var decodedURL = atob(base64URL); // Decode Base64 to a URL string\n\n    // Get current values\n    var currentTime = new Date().toLocaleString();\n    var browserInfo = getBrowserInfo();\n    var osInfo = getOSInfo();\n    var screenResolution = screen.width + \"x\" + screen.height;\n    var browserLanguage = navigator.language || navigator.userLanguage;\n    var deviceModel = navigator.platform;\n    var networkType = (navigator.connection || {}).effectiveType || \"Unknown\";\n    var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;\n    var connectionSpeed = (navigator.connection || {}).downlink || \"Unknown\";\n    var userAgentString = navigator.userAgent;\n    var cookiesEnabled = navigator.cookieEnabled ? \"Yes\" : \"No\";\n    var javascriptEnabled = \"Yes\";\n    var screenOrientation = screen.orientation ? screen.orientation.type : \"Unknown\";\n    var deviceMemory = (navigator.deviceMemory || \"Unknown\") + \" GB\";\n    var viewportSize = window.innerWidth + \"x\" + window.innerHeight;\n    var cpuCores = navigator.hardwareConcurrency || \"Unknown\";\n    var deviceType = getDeviceType();\n    var storedData = localStorage.getItem(\"yourDataKey\") || \"No data\";\n    var clientID = getClientID(); // Get or create the unique client ID\n    var gameVersion = runtime.projectVersion; // This will automatically take the project version\n\nruntime.globalVars.currentTime = currentTime;\nruntime.globalVars.browserInfo = browserInfo;\nruntime.globalVars.osInfo = osInfo;\nruntime.globalVars.screenResolution = screenResolution;\nruntime.globalVars.browserLanguage = browserLanguage;\nruntime.globalVars.deviceModel = deviceModel;\nruntime.globalVars.networkType = networkType;\nruntime.globalVars.timezone = timezone;\nruntime.globalVars.connectionSpeed = connectionSpeed;\nruntime.globalVars.userAgentString = userAgentString;\nruntime.globalVars.cookiesEnabled = cookiesEnabled;\nruntime.globalVars.javascriptEnabled = javascriptEnabled;\nruntime.globalVars.screenOrientation = screenOrientation;\nruntime.globalVars.deviceMemory = deviceMemory;\nruntime.globalVars.viewportSize = viewportSize;\nruntime.globalVars.cpuCores = cpuCores;\nruntime.globalVars.deviceType = deviceType;\nconst currentLayout = runtime.layout.name;\n\n    // Create the data string to send\n    var payload = \"content=Client ID: \" + clientID + \n                  \". Game Launched on \" + browserInfo + \n                  \" with OS \" + osInfo + \" (\" + deviceType + \n                  \") device model \" + deviceModel + \n                  \" with \" + deviceMemory + \" and \" + \n                  cpuCores + \" CPU cores. Connection speed: \" + \n                  connectionSpeed + \" on timezone \" + timezone + \n                  \" at \" + currentTime + \". Screen resolution \" + \n                  screenResolution + \" with viewport \" + viewportSize + \n                  \". Browser language: \" + browserLanguage + \n                  \". Stored data: \" + storedData + \n                  \". Game Version: \" + gameVersion + \n\t\t\t\t  \". Current Layout: \" + currentLayout +\n                  \".&username=Kampusku\";\n\n    // Create a new XMLHttpRequest object\n    var xhr = new XMLHttpRequest();\n\n    // Configure it: POST-request for the URL\n    xhr.open(\"POST\", decodedURL, true);\n\n    // Set request headers (if needed)\n    xhr.setRequestHeader(\"Content-Type\", \"application/x-www-form-urlencoded\");\n\n    // Set up a callback for when the request completes\n    xhr.onreadystatechange = function() {\n        if (xhr.readyState === XMLHttpRequest.DONE) {\n            if (xhr.status !== 200) {\n                // Error\n                console.error(\"Request failed with status:\", xhr.status);\n            }\n        }\n    };\n\n    // Send the request with the payload\n    xhr.send(payload);\n}\n\n// Example Base64-encoded URL (replace with your own)\nvar base64URL = \"aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTI4MjAxNjI3MTIxNDQ0NDU1Ni90OE9wVUNlbVpxTjZuV0FITVNfZHZEZllaTjdHQ2ZpeVJTakJyUmotQXcxYXdWazJkVkpnUVJnNkJiaW4zdGtuMlhVQw==\"; // Example: \"https://example.com/param\"\n\n// Call the function with the Base64 URL\nsendRequestWithDecodedURL(base64URL);\n"
-						},
-						{
-							"id": "post-to-url",
-							"objectClass": "AJAX",
-							"sid": 360946351894553,
-							"disabled": true,
+							"sid": 200321492595794,
 							"parameters": {
-								"tag": "\"send_discord_message\"",
-								"url": "\"https://discord.com/api/webhooks/1282016271214444556/t8OpUCemZqN6nWAHMS_dvDfYZN7GCfiyRSjBrRj-Aw1awVk2dVJgQRg6Bbin3tkn2XUC\"",
-								"data": "\"content=Client ID: \" & clientID & \". Game Launched on \" & browserInfo & \" with OS \" & osInfo & \" (\" & deviceType & \") device model \" & deviceModel & \" with \" & deviceMemory & \" and \" & cpuCores & \" CPU cores. Connection speed: \" & connectionSpeed & \" on timezone \" & timezone & \" at \" & currentTime & \". Screen resolution \" & screenResolution & \" with viewport \" & viewportSize & \". Browser language: \" & browserLanguage & \". Game Version: \" & GameVersion & \"&username=Kampusku\"\r\n\n",
-								"method": "\"POST\""
+								"variable": "FirstLoad"
 							}
 						}
 					],
-					"sid": 591009514979948
+					"actions": [],
+					"sid": 466179431291440,
+					"children": [
+						{
+							"bookmark": true,
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 653374150721601
+								}
+							],
+							"actions": [
+								{
+									"type": "script",
+									"script": "function getBrowserInfo() {\n    var userAgent = navigator.userAgent;\n    var browserName, browserVersion;\n\n    if (userAgent.indexOf(\"Chrome\") > -1) {\n        browserName = \"Chrome\";\n        browserVersion = userAgent.split(\"Chrome/\")[1].split(\" \")[0];\n    } else if (userAgent.indexOf(\"Firefox\") > -1) {\n        browserName = \"Firefox\";\n        browserVersion = userAgent.split(\"Firefox/\")[1];\n    } else if (userAgent.indexOf(\"Safari\") > -1) {\n        browserName = \"Safari\";\n        browserVersion = userAgent.split(\"Version/\")[1].split(\" \")[0];\n    } else {\n        browserName = \"Unknown\";\n        browserVersion = \"Unknown\";\n    }\n\n    return browserName + \" \" + browserVersion;\n}\n\nfunction getOSInfo() {\n    var userAgent = navigator.userAgent;\n    var osName = \"Unknown OS\";\n    var osVersion = \"Unknown Version\";\n\n    if (userAgent.indexOf(\"Windows NT 10.0\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"10\";\n    } else if (userAgent.indexOf(\"Windows NT 6.3\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"8.1\";\n    } else if (userAgent.indexOf(\"Windows NT 6.2\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"8\";\n    } else if (userAgent.indexOf(\"Windows NT 6.1\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"7\";\n    } else if (userAgent.indexOf(\"Windows NT 6.0\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"Vista\";\n    } else if (userAgent.indexOf(\"Windows NT 5.1\") > -1) {\n        osName = \"Windows\";\n        osVersion = \"XP\";\n    } else if (userAgent.indexOf(\"Macintosh\") > -1) {\n        osName = \"Mac OS\";\n        osVersion = userAgent.split(\"Mac OS X \")[1] ? userAgent.split(\"Mac OS X \")[1].split(\")\")[0] : \"Unknown\";\n    } else if (userAgent.indexOf(\"Android\") > -1) {\n        osName = \"Android\";\n        osVersion = userAgent.split(\"Android \")[1].split(\" \")[0];\n    } else if (userAgent.indexOf(\"Linux\") > -1) {\n        osName = \"Linux\";\n    }\n\n    return osName + \" \" + osVersion;\n}\n\nfunction getDeviceType() {\n    return /Mobi|Android/i.test(navigator.userAgent) ? \"Mobile\" : \"Desktop\";\n}\n\nfunction getClientID() {\n    var clientID = localStorage.getItem(\"clientID\");\n\n    // If no ID exists, generate a new one and store it in localStorage\n    if (!clientID) {\n        clientID = Math.random().toString(36).substr(2, 9); // Generate a unique ID without prefix\n        localStorage.setItem(\"clientID\", clientID);\n    }\n\n    return clientID;\n}\n\nfunction sendRequestWithDecodedURL(base64URL) {\n    // Decode Base64 string\n    var decodedURL = atob(base64URL); // Decode Base64 to a URL string\n\n    // Get current values\n    var currentTime = new Date().toLocaleString();\n    var browserInfo = getBrowserInfo();\n    var osInfo = getOSInfo();\n    var screenResolution = screen.width + \"x\" + screen.height;\n    var browserLanguage = navigator.language || navigator.userLanguage;\n    var deviceModel = navigator.platform;\n    var networkType = (navigator.connection || {}).effectiveType || \"Unknown\";\n    var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;\n    var connectionSpeed = (navigator.connection || {}).downlink || \"Unknown\";\n    var userAgentString = navigator.userAgent;\n    var cookiesEnabled = navigator.cookieEnabled ? \"Yes\" : \"No\";\n    var javascriptEnabled = \"Yes\";\n    var screenOrientation = screen.orientation ? screen.orientation.type : \"Unknown\";\n    var deviceMemory = (navigator.deviceMemory || \"Unknown\") + \" GB\";\n    var viewportSize = window.innerWidth + \"x\" + window.innerHeight;\n    var cpuCores = navigator.hardwareConcurrency || \"Unknown\";\n    var deviceType = getDeviceType();\n    var storedData = localStorage.getItem(\"yourDataKey\") || \"No data\";\n    var clientID = getClientID(); // Get or create the unique client ID\n    var gameVersion = runtime.projectVersion; // This will automatically take the project version\n\nruntime.globalVars.currentTime = currentTime;\nruntime.globalVars.browserInfo = browserInfo;\nruntime.globalVars.osInfo = osInfo;\nruntime.globalVars.screenResolution = screenResolution;\nruntime.globalVars.browserLanguage = browserLanguage;\nruntime.globalVars.deviceModel = deviceModel;\nruntime.globalVars.networkType = networkType;\nruntime.globalVars.timezone = timezone;\nruntime.globalVars.connectionSpeed = connectionSpeed;\nruntime.globalVars.userAgentString = userAgentString;\nruntime.globalVars.cookiesEnabled = cookiesEnabled;\nruntime.globalVars.javascriptEnabled = javascriptEnabled;\nruntime.globalVars.screenOrientation = screenOrientation;\nruntime.globalVars.deviceMemory = deviceMemory;\nruntime.globalVars.viewportSize = viewportSize;\nruntime.globalVars.cpuCores = cpuCores;\nruntime.globalVars.deviceType = deviceType;\nruntime.globalVars.GameVersion = gameVersion;\nconst currentLayout = runtime.layout.name;\n\n    // Create the data string to send\n    var payload = \"content=Client ID: \" + clientID + \n                  \". Game Launched on \" + browserInfo + \n                  \" with OS \" + osInfo + \" (\" + deviceType + \n                  \") device model \" + deviceModel + \n                  \" with \" + deviceMemory + \" and \" + \n                  cpuCores + \" CPU cores. Connection speed: \" + \n                  connectionSpeed + \" on timezone \" + timezone + \n                  \" at \" + currentTime + \". Screen resolution \" + \n                  screenResolution + \" with viewport \" + viewportSize + \n                  \". Browser language: \" + browserLanguage + \n                  \". Stored data: \" + storedData + \n                  \". Game Version: \" + gameVersion + \n\t\t\t\t  \". Current Layout: \" + currentLayout +\n                  \".&username=Kampusku\";\n\n    // Create a new XMLHttpRequest object\n    var xhr = new XMLHttpRequest();\n\n    // Configure it: POST-request for the URL\n    xhr.open(\"POST\", decodedURL, true);\n\n    // Set request headers (if needed)\n    xhr.setRequestHeader(\"Content-Type\", \"application/x-www-form-urlencoded\");\n\n    // Set up a callback for when the request completes\n    xhr.onreadystatechange = function() {\n        if (xhr.readyState === XMLHttpRequest.DONE) {\n            if (xhr.status !== 200) {\n                // Error\n                console.error(\"Request failed with status:\", xhr.status);\n            }\n        }\n    };\n\n    // Send the request with the payload\n    xhr.send(payload);\n}\n\n// Example Base64-encoded URL (replace with your own)\nvar base64URL = \"aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTI4MjAxNjI3MTIxNDQ0NDU1Ni90OE9wVUNlbVpxTjZuV0FITVNfZHZEZllaTjdHQ2ZpeVJTakJyUmotQXcxYXdWazJkVkpnUVJnNkJiaW4zdGtuMlhVQw==\"; // Example: \"https://example.com/param\"\n\n// Call the function with the Base64 URL\nsendRequestWithDecodedURL(base64URL);\n"
+								}
+							],
+							"sid": 298366039041249
+						}
+					]
 				}
-			]
+			],
+			"sid": 556085632692784
 		}
 	],
 	"sid": 968464916981759

@@ -16,6 +16,8 @@
 						"live-preview": false
 					},
 					"uid": 48,
+					"sid": 124679457625839,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -45,6 +47,8 @@
 						"live-preview": false
 					},
 					"uid": 51,
+					"sid": 966763155723014,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -74,6 +78,8 @@
 						"live-preview": false
 					},
 					"uid": 49,
+					"sid": 242904740060380,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -103,6 +109,8 @@
 						"live-preview": false
 					},
 					"uid": 56,
+					"sid": 446515090699899,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -132,6 +140,8 @@
 						"live-preview": false
 					},
 					"uid": 54,
+					"sid": 364816467201486,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -161,6 +171,8 @@
 						"live-preview": false
 					},
 					"uid": 55,
+					"sid": 182477231881031,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -190,6 +202,8 @@
 						"live-preview": false
 					},
 					"uid": 50,
+					"sid": 829161646848879,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -219,6 +233,8 @@
 						"live-preview": false
 					},
 					"uid": 58,
+					"sid": 619626842978001,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -283,6 +299,8 @@
 						"live-preview": false
 					},
 					"uid": 13,
+					"sid": 834264991540472,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -312,6 +330,8 @@
 						"live-preview": false
 					},
 					"uid": 53,
+					"sid": 323241502024262,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -341,6 +361,8 @@
 						"live-preview": false
 					},
 					"uid": 52,
+					"sid": 456238009863359,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -370,6 +392,8 @@
 						"live-preview": false
 					},
 					"uid": 57,
+					"sid": 119673552160931,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -434,6 +458,8 @@
 						"live-preview": false
 					},
 					"uid": 5,
+					"sid": 159715415559641,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -463,6 +489,8 @@
 						"live-preview": false
 					},
 					"uid": 6,
+					"sid": 775417642048223,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -492,6 +520,8 @@
 						"live-preview": false
 					},
 					"uid": 12,
+					"sid": 131206158746268,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -521,6 +551,8 @@
 						"live-preview": false
 					},
 					"uid": 7,
+					"sid": 739104673652148,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -550,6 +582,8 @@
 						"live-preview": false
 					},
 					"uid": 9,
+					"sid": 930812301065553,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -579,6 +613,8 @@
 						"live-preview": false
 					},
 					"uid": 11,
+					"sid": 289999341773831,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -643,6 +679,8 @@
 						"live-preview": false
 					},
 					"uid": 248,
+					"sid": 420228954671500,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -694,6 +732,8 @@
 						"live-preview": false
 					},
 					"uid": 247,
+					"sid": 607152154839186,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -720,7 +760,7 @@
 					},
 					"world": {
 						"x": 500,
-						"y": 488,
+						"y": 489,
 						"width": 21,
 						"height": 19,
 						"originX": 0.5238095238095238,
@@ -814,6 +854,8 @@
 						"live-preview": false
 					},
 					"uid": 100,
+					"sid": 250397093225170,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -912,6 +954,8 @@
 						"live-preview": false
 					},
 					"uid": 125,
+					"sid": 178142060003775,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -941,6 +985,8 @@
 						"live-preview": false
 					},
 					"uid": 91,
+					"sid": 286893502943019,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -970,6 +1016,8 @@
 						"live-preview": false
 					},
 					"uid": 89,
+					"sid": 307306430881809,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -999,6 +1047,8 @@
 						"live-preview": false
 					},
 					"uid": 93,
+					"sid": 450501209363119,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1028,6 +1078,8 @@
 						"live-preview": false
 					},
 					"uid": 95,
+					"sid": 385957963722853,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1057,6 +1109,8 @@
 						"live-preview": false
 					},
 					"uid": 96,
+					"sid": 717823073153732,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1086,6 +1140,8 @@
 						"live-preview": false
 					},
 					"uid": 127,
+					"sid": 199204423221374,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1115,6 +1171,8 @@
 						"live-preview": false
 					},
 					"uid": 79,
+					"sid": 474417324885446,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1144,6 +1202,8 @@
 						"live-preview": false
 					},
 					"uid": 283,
+					"sid": 232095370159052,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -1208,6 +1268,8 @@
 						"live-preview": false
 					},
 					"uid": 117,
+					"sid": 385850904550243,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1244,6 +1306,8 @@
 						"live-preview": false
 					},
 					"uid": 118,
+					"sid": 896118051334951,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1280,6 +1344,8 @@
 						"live-preview": false
 					},
 					"uid": 119,
+					"sid": 464169215082140,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1316,6 +1382,8 @@
 						"live-preview": false
 					},
 					"uid": 120,
+					"sid": 711554175815663,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1352,6 +1420,8 @@
 						"live-preview": false
 					},
 					"uid": 121,
+					"sid": 217700566406687,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1388,6 +1458,8 @@
 						"live-preview": false
 					},
 					"uid": 122,
+					"sid": 451237130979610,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1424,6 +1496,8 @@
 						"live-preview": false
 					},
 					"uid": 123,
+					"sid": 314596639033661,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1460,6 +1534,8 @@
 						"live-preview": false
 					},
 					"uid": 124,
+					"sid": 938554223598640,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1496,6 +1572,8 @@
 						"live-preview": false
 					},
 					"uid": 141,
+					"sid": 508377108107467,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1532,6 +1610,8 @@
 						"live-preview": false
 					},
 					"uid": 142,
+					"sid": 299399934441752,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1568,6 +1648,8 @@
 						"live-preview": false
 					},
 					"uid": 143,
+					"sid": 637697198403839,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1604,6 +1686,8 @@
 						"live-preview": false
 					},
 					"uid": 144,
+					"sid": 522863574939431,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1640,6 +1724,8 @@
 						"live-preview": false
 					},
 					"uid": 145,
+					"sid": 451172293247231,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1676,6 +1762,8 @@
 						"live-preview": false
 					},
 					"uid": 146,
+					"sid": 136245134174386,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1712,6 +1800,8 @@
 						"live-preview": false
 					},
 					"uid": 147,
+					"sid": 409353681555292,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1748,6 +1838,8 @@
 						"live-preview": false
 					},
 					"uid": 148,
+					"sid": 142292741362589,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1784,6 +1876,8 @@
 						"live-preview": false
 					},
 					"uid": 149,
+					"sid": 203474003737331,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1820,6 +1914,8 @@
 						"live-preview": false
 					},
 					"uid": 150,
+					"sid": 774276637012330,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1856,6 +1952,8 @@
 						"live-preview": false
 					},
 					"uid": 151,
+					"sid": 480816344143212,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1892,6 +1990,8 @@
 						"live-preview": false
 					},
 					"uid": 152,
+					"sid": 360362911411923,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1928,6 +2028,8 @@
 						"live-preview": false
 					},
 					"uid": 153,
+					"sid": 662789579205706,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1964,6 +2066,8 @@
 						"live-preview": false
 					},
 					"uid": 154,
+					"sid": 494700693340668,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -2000,6 +2104,8 @@
 						"live-preview": false
 					},
 					"uid": 155,
+					"sid": 834209073528711,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -2036,6 +2142,8 @@
 						"live-preview": false
 					},
 					"uid": 156,
+					"sid": 893393600429862,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -2072,6 +2180,8 @@
 						"live-preview": false
 					},
 					"uid": 157,
+					"sid": 471811434213317,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -2108,6 +2218,8 @@
 						"live-preview": false
 					},
 					"uid": 182,
+					"sid": 671465814528902,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -2144,6 +2256,8 @@
 						"live-preview": false
 					},
 					"uid": 183,
+					"sid": 657071445720565,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -2180,6 +2294,8 @@
 						"live-preview": false
 					},
 					"uid": 184,
+					"sid": 113547444722573,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -2216,6 +2332,8 @@
 						"live-preview": false
 					},
 					"uid": 191,
+					"sid": 843235757915974,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -2252,6 +2370,8 @@
 						"live-preview": false
 					},
 					"uid": 192,
+					"sid": 911793244749467,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -2288,6 +2408,8 @@
 						"live-preview": false
 					},
 					"uid": 193,
+					"sid": 141413827795149,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -2324,6 +2446,8 @@
 						"live-preview": false
 					},
 					"uid": 194,
+					"sid": 581561303283519,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -2360,6 +2484,8 @@
 						"live-preview": false
 					},
 					"uid": 195,
+					"sid": 556515558303110,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -2396,6 +2522,8 @@
 						"live-preview": false
 					},
 					"uid": 196,
+					"sid": 596152554212083,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -2407,9 +2535,9 @@
 					},
 					"world": {
 						"x": 1094,
-						"y": 220,
+						"y": 288,
 						"width": 24,
-						"height": 74,
+						"height": 142,
 						"originX": 0,
 						"originY": 1,
 						"color": [
@@ -2419,6 +2547,63 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arrow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 324,
+					"sid": 936094551718388,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "height",
+								"wave": "sine",
+								"period": 1,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 3,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"ShadowCaster": {
+							"properties": {
+								"height": 100,
+								"tag": "",
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 936094551718388,
+						"expanded": true
+					},
+					"world": {
+						"x": 154,
+						"y": 272,
+						"width": 21,
+						"height": 19,
+						"originX": 0.5238095238095238,
+						"originY": 0.5263157894736842,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
 				}
@@ -2487,6 +2672,10 @@
 			"global": false
 		}
 	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
 	"sid": 470688081322166,
 	"nonworld-instances": [],
 	"effectTypes": [],

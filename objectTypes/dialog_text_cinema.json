@@ -1,0 +1,17 @@
+{
+	"name": "dialog_text_cinema",
+	"plugin-id": "Text",
+	"sid": 326149332469387,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ResetDialogue",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 132035473562510
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

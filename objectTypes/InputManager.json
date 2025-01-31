@@ -5,6 +5,8 @@
 	"singleglobal-inst": {
 		"type": "InputManager",
 		"properties": {},
-		"uid": 297
+		"uid": 297,
+		"sid": 158708598292772,
+		"tags": ""
 	}
 }

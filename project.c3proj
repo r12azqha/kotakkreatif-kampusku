@@ -1,9 +1,9 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 39702,
+	"savedWithRelease": 41602,
 	"name": "Kampusku",
 	"runtime": "c3",
-	"useWorker": "auto",
+	"useWorker": "dom",
 	"bundleAddons": true,
 	"usedAddons": [
 		{
@@ -136,6 +136,20 @@
 		},
 		{
 			"type": "effect",
+			"id": "hexpixellate",
+			"name": "Hexagonal pixellate",
+			"author": "Evan Wallace",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "pixellate",
+			"name": "Pixellate",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "vignette",
 			"name": "Vignette",
 			"author": "Brad Larson",
@@ -163,7 +177,11 @@
 			"3DCamera",
 			"InputManager",
 			"Mouse",
-			"Touch"
+			"Touch",
+			"dialog_text_cinema",
+			"Pendaftaran",
+			"kampuskuLogo",
+			"kampuskuLogoTrans"
 		],
 		"subfolders": [
 			{
@@ -417,10 +435,10 @@
 					"eGedung1_Lobby",
 					"eGedung1_Keuangan",
 					"eGedung1_Pendaftaran",
-					"eGedung1_Makopala",
 					"eLapangan",
 					"eDebug",
-					"eHud"
+					"eHud",
+					"eGedung1_Makopala"
 				],
 				"subfolders": [],
 				"name": "Layout"
@@ -431,7 +449,8 @@
 					"sTpVariable",
 					"sTransition",
 					"sTelematry",
-					"sHUD"
+					"sHUD",
+					"sQuest"
 				],
 				"subfolders": [],
 				"name": "System"
@@ -590,14 +609,14 @@
 		"subfolders": []
 	},
 	"properties": {
-		"description": "",
-		"version": "Alpha 1.0.4.0",
-		"author": "",
+		"description": "desc",
+		"version": "1.0.6.3 kotif sample",
+		"author": "kotakkreatif",
 		"authorEmail": "",
 		"authorWebsite": "",
-		"appId": "",
+		"appId": "com.kampusku.kotakkreatif",
 		"pixelRounding": false,
-		"zAxisScale": "normalized",
+		"zAxisScale": "regular",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
 		"fullscreenMode": "scale-inner",
@@ -630,7 +649,7 @@
 		"sampling": "nearest",
 		"downscaling": "medium",
 		"renderingMode": "2d",
-		"anisotropicFiltering": "auto",
+		"anisotropicFiltering": "4x",
 		"zNear": 1,
 		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,
@@ -638,7 +657,6 @@
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
-		"autoReloadScriptsOnPreview": false,
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},

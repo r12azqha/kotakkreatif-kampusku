@@ -16,6 +16,8 @@
 						"live-preview": false
 					},
 					"uid": 204,
+					"sid": 819522724123714,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -45,6 +47,8 @@
 						"live-preview": false
 					},
 					"uid": 205,
+					"sid": 112952181806047,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -74,6 +78,8 @@
 						"live-preview": false
 					},
 					"uid": 206,
+					"sid": 440218148392604,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -103,6 +109,8 @@
 						"live-preview": false
 					},
 					"uid": 249,
+					"sid": 824763962586622,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -161,6 +169,8 @@
 						"live-preview": false
 					},
 					"uid": 250,
+					"sid": 205372570739238,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -190,6 +200,8 @@
 						"live-preview": false
 					},
 					"uid": 251,
+					"sid": 693301099960982,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -219,6 +231,8 @@
 						"live-preview": false
 					},
 					"uid": 252,
+					"sid": 937655535733750,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -277,6 +291,8 @@
 						"live-preview": false
 					},
 					"uid": 253,
+					"sid": 141034434013382,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -306,6 +322,8 @@
 						"live-preview": false
 					},
 					"uid": 254,
+					"sid": 809988600168385,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -335,6 +353,8 @@
 						"live-preview": false
 					},
 					"uid": 255,
+					"sid": 627008861734242,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -364,6 +384,8 @@
 						"live-preview": false
 					},
 					"uid": 256,
+					"sid": 402098911173317,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -414,6 +436,10 @@
 			"global": false
 		}
 	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
 	"sid": 510405902542391,
 	"nonworld-instances": [],
 	"effectTypes": [],
